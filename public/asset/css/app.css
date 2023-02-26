@@ -1,0 +1,117 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+.collapse {
+    font-weight: bold;
+}
+.top-nav {
+    width: 100%;
+}
+.top-nav li, .auth-nav li {
+    margin: 0 auto;
+}
+.top-nav button {
+    width:clamp(6em,7vw,16em); 
+    margin:0 1em;
+}
+/* banner */
+.banner {
+    min-height: 35em;
+    background-image: url(../images/b.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgb(211, 211, 211);
+    padding: 3em;
+    color: white;
+    max-width: 100%;  
+}
+.banner h1 {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.banner p {
+    text-transform: capitalize;
+    max-width: 65%;
+    margin: 2em 0;
+    color: rgb(167, 128, 0);
+}
+.service-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    min-height: 24em;
+    background-image: url(../images/b1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgb(43, 43, 43);
+    padding: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio {
+    padding: 5em;
+}
+/* footer */
+footer .pros-cons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+footer .pros-cons h6 {
+    margin: 0 1em;
+}
+footer p {
+    text-align: center;
+    margin: 1em 0;
+}
+.footer-top {
+    color: white;
+    padding: 1em 0;
+}
+.footer-top .info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.info div {
+    margin: 1em auto;
+}
+/* -- page services -- */
+.services {
+    margin: 2em 0;
+}
+/*  */
+.card {
+    margin: 1em .6em;
+}
+/* media query */
+@media screen and (max-width: 1000px) {
+    .top-nav li {
+        margin: 0 auto;
+    }
+    .top-nav button {
+        margin: 1em auto;
+        width:clamp(10em,10vw,16em); 
+    }
+}
+@media screen and (max-width: 370px) {
+    .banner {
+        text-align: center;
+    }
+    .banner p {
+        max-width: 100%;
+    }
+}
