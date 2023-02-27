@@ -6,25 +6,43 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    
+    <!-- SEO -->
+    <meta name="keywords" content="@yield('meta_keywords')">
+    <meta name="description" content="@yield('meta_description')">
+    <link rel="canonical" href="{{url()->current()}}"/>
+    
+    <!-- Google Details -->
+     
+    <!-- Google-Details -->
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('page-title')</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-
+    
     <!-- Styles -->
     <link rel="stylesheet" href="{{asset('asset/css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('asset/css/styles.css')}}">
+
+    @vite(['resources/js/app.js'])
     
+
     <!-- Scripts -->
-    <script src="{{asset('asset/js/app.js')}}" defer></script>
+    <script type="module" src="{{asset('asset/js/app.js')}}" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/092c3209a1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    <img src="{{asset('/asset/images/logo.png')}}" alt="logo" srcset="" width="50px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -32,12 +50,18 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
-
+                    <ul class="navbar-nav me-auto top-nav">
+                        <li class="nav-item"><a href="{{url('/')}}" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="{{route('services')}}" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="{{route('about')}}" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Blogs</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
+                        <button type="button" class="btn btn-danger" onclick="AppBtn()">Get App</button>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto auth-nav">
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
@@ -59,8 +83,8 @@
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                    onclick="event.preventDefault();
+                                                    document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
@@ -75,9 +99,55 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
+
+        <footer>
+            <div class="bg-dark footer-top">
+                <div class="container info" style="margin:1em auto;">
+                    <div>
+                        <h1>Partnered</h1>
+                        <li>Mudimba Software</li>
+                        <li>HD Hats</li>
+                        <li>Spinzol Beat & Mosente</li>
+                        <li>Mercy Sounds</li>
+                    </div>
+                    <div>
+                        <h1>Contact Us</h1>
+                        <li><a href="http://">Facabook</a></li>
+                        <li><a href="http://">Whatsapp | 0972273828</a></li>
+                        <li><a href="http://">Send Mail</a></li>
+                    </div>
+                    <div>
+                        <h1>Lessons and School</h1>
+                        <li>Music and Vocalism</li>
+                        <li>Programming</li>
+                        <li>Graphical Design</li>
+                        <li>Bricklaying and Plastering</li>
+                        <li>Automotive Mechanics</li>
+                        <li><a href="#">Also check out our blogs</a></li>
+                    </div>
+                </div>
+                <div class="container pros-cons">
+                    <h6><a href="{{route('privacy-policy')}}">Privacy Policy</a></h6>
+                    <h6><a href="{{route('privacy-policy')}}">Terms and Conditions</a></h6>
+                </div>
+            </div>
+            <div>
+                <p>Mcair-Studios-Tech | &copy; 2023 All Rights Reserved.</p>
+            </div>
+        </footer>
     </div>
+
+    <script>
+        function AppBtn() {
+            swal({
+                title: "Important Notice",
+                text: "Our App is under development, soon to notify! Thank you.",
+                icon: "warning",
+            })
+        }
+    </script>
 </body>
 </html>
