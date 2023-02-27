@@ -6,6 +6,9 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="{{asset('asset/images/logo.png')}}" type="image/x-icon">
     
     <!-- SEO -->
     <meta name="keywords" content="@yield('meta_keywords')">
@@ -24,10 +27,7 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="{{asset('asset/css/app.css')}}">
-    <link rel="stylesheet" href="{{asset('asset/css/styles.css')}}">
-
-    @vite(['resources/js/app.js'])
-    
+    <link rel="stylesheet" href="{{asset('asset/css/styles.css')}}">    
 
     <!-- Scripts -->
     <script type="module" src="{{asset('asset/js/app.js')}}" defer></script>
