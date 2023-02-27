@@ -6,9 +6,6 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="{{asset('asset/images/logo.png')}}" type="image/x-icon">
     
     <!-- SEO -->
     <meta name="keywords" content="@yield('meta_keywords')">
@@ -27,11 +24,15 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="{{asset('asset/css/app.css')}}">
-    <link rel="stylesheet" href="{{asset('asset/css/styles.css')}}">    
+    <link rel="stylesheet" href="{{asset('asset/css/styles.css')}}">
+    
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="{{asset('asset/images/logo.png')}}" type="image/x-icon">
 
     <!-- Scripts -->
     <script type="module" src="{{asset('asset/js/app.js')}}" defer></script>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
