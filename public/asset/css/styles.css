@@ -1,6 +1,12 @@
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
+body {
+    font-size: 15px;
+}
+h1 {
+    opacity: .7;
+}
 
 .collapse {
     font-weight: bold;
@@ -64,31 +70,51 @@ article {
     padding: 5em;
 }
 /* footer */
-footer .pros-cons{
+.footer-top, .social {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
 }
-footer .pros-cons h6 {
-    margin: 0 1em;
-}
-footer p {
-    text-align: center;
-    margin: 1em 0;
-}
+/* *********************** */
 .footer-top {
     color: white;
     padding: 1em 0;
 }
-.footer-top .info {
-    display: flex;
+.newsletter h1, 
+.newsletter h5, 
+.social h4, 
+.partner-rights,
+.creation h1
+{
+    text-transform: capitalize;
+}
+.newsletter h5 {
+    color: rgba(235, 59, 28, 0.897);
+}
+.info form input {
+    width: 28em;
+}
+.footer-slogan {
+    margin: 2em 0;
+}
+.social {
     justify-content: space-between;
-    flex-wrap: wrap;
+    max-width: 100%;
 }
-.info div {
-    margin: 1em auto;
+.social h6 {
+    margin: 1em 0;
 }
+.social h6 a {
+    color: white;
+    text-decoration: none;
+}
+.social i img {
+    width: 25px;
+    opacity: .8;
+    color: red;
+}
+.copyright {
+    margin: 1em 0;
+}
+/* *********************** */
 /* -- page services -- */
 .services {
     margin: 2em 0;

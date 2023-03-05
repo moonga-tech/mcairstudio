@@ -25,6 +25,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{asset('asset/css/app.css')}}">
     <link rel="stylesheet" href="{{asset('asset/css/styles.css')}}">
+    <link rel="stylesheet" href="{{asset('asset/sass/app.scss')}}">
     
     <!-- FAVICON -->
     <link rel="shortcut icon" href="{{asset('asset/images/logo.png')}}" type="image/x-icon">
@@ -58,7 +59,7 @@
                         <li class="nav-item"><a href="" class="nav-link">Blogs</a></li>
                         <li class="nav-item"><a href="" class="nav-link">Projects</a></li>
                         <li class="nav-item"><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
-                        <button type="button" class="btn btn-danger" onclick="AppBtn()">Get App</button>
+                        <button type="button" class="btn btn-outline-danger" onclick="AppBtn()">Get App</button>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -105,38 +106,72 @@
         </main>
 
         <footer>
-            <div class="bg-dark footer-top">
-                <div class="container info" style="margin:1em auto;">
-                    <div>
-                        <h1>Partnered</h1>
-                        <li>Mudimba Software</li>
-                        <li>HD Hats</li>
-                        <li>Spinzol Beat & Mosente</li>
-                        <li>Mercy Sounds</li>
+            <div class="bg-dark">
+                <div class="container footer-top">
+                    <div class="container info">
+                        <!-- <div>
+                            <h1>Partnered</h1>
+                            <li>Mudimba Software</li>
+                            <li>HD Hats</li>
+                            <li>Spinzol Beat & Mosente</li>
+                            <li>Mercy Sounds</li>
+                        </div>
+                        <div>
+                            <h1>Contact Us</h1>
+                            <li><a href="http://">Facabook</a></li>
+                            <li><a href="http://">Whatsapp | 0972273828</a></li>
+                            <li><a href="http://">Send Mail</a></li>
+                        </div>
+                        <div>
+                            <h1>Lessons and School</h1>
+                            <li>Music and Vocalism</li>
+                            <li>Programming</li>
+                            <li>Graphical Design</li>
+                            <li>Bricklaying and Plastering</li>
+                            <li>Automotive Mechanics</li>
+                            <li><a href="#">Also check out our blogs</a></li>
+                        </div> -->
+                        <div>
+                            <div class="newsletter">
+                                <h5>-- news letter --</h5>
+                                <h1>start with us today!</h1>
+                            </div>
+                            <div>
+                                <form action="" method="get">
+                                    @csrf
+                                    <input type="email" name="news-email" id="news-email" class="form-control" placeholder="news-letter-email">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="footer-slogan">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, deleniti?</p>
+                        </div>
                     </div>
-                    <div>
-                        <h1>Contact Us</h1>
-                        <li><a href="http://">Facabook</a></li>
-                        <li><a href="http://">Whatsapp | 0972273828</a></li>
-                        <li><a href="http://">Send Mail</a></li>
+                    <div class="social container">
+                        <div>
+                            <h6><a href="{{route('privacy-policy')}}">Privacy Policy</a></h6>
+                            <h6><a href="{{route('privacy-policy')}}">Terms and Conditions</a></h6>
+                            <h6><a href="{{route('privacy-policy')}}">Cookie Policy</a></h6>
+                        </div>
+                        <div class="">
+                            <h4>Chat with us</h4>
+                            <div>
+                                <i>
+                                    <img src="asset/images/icon/f.png" alt="" srcset="">
+                                </i>
+                                <i>
+                                    <img src="asset/images/icon/i.png" alt="" srcset="">
+                                </i>
+                                <i>
+                                    <img src="asset/images/icon/y.png" alt="" srcset="">
+                                </i>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h1>Lessons and School</h1>
-                        <li>Music and Vocalism</li>
-                        <li>Programming</li>
-                        <li>Graphical Design</li>
-                        <li>Bricklaying and Plastering</li>
-                        <li>Automotive Mechanics</li>
-                        <li><a href="#">Also check out our blogs</a></li>
-                    </div>
-                </div>
-                <div class="container pros-cons">
-                    <h6><a href="{{route('privacy-policy')}}">Privacy Policy</a></h6>
-                    <h6><a href="{{route('privacy-policy')}}">Terms and Conditions</a></h6>
                 </div>
             </div>
-            <div>
-                <p>Mcair-Studios-Tech | &copy; 2023 All Rights Reserved.</p>
+            <div class="copyright">
+                <p class="text-center">Mcair-Studios-Tech | &copy; 2023 All Rights Reserved. <span class="partner-rights">@mudimba software @hats HD</span></p>
             </div>
         </footer>
     </div>
