@@ -13,7 +13,9 @@
         <section class="course-content">
             <div class="text-center">
             <h1>Introduction to Vocalism</h1>
-            <iframe width="765" height="409" src="https://www.youtube.com/embed/EjCFFURapcI" title="introduction 1.1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="embed-responsive embed-responsive-4by3 container-fluid">
+                <iframe width="100%" height="80%" src="https://www.youtube.com/embed/EjCFFURapcI" title="introduction 1.1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="embed-responsive-item col-sm-12" allowfullscreen style="min-height:30em;"></iframe>
+            </div>
             </div>
         </section>
     </div>
