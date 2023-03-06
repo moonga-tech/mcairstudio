@@ -6,7 +6,7 @@
 @section('content')
 <div class="banner">
     <div class="container banner-content">
-        <h1 class="text-secondary">Mcair Studios and Tech</h1>
+        <h1>Mcair Studios and Tech</h1>
         <p>
             " the creation of content to your desired expectation.
             The future of graphical design, music production and compute Programming
@@ -15,10 +15,10 @@
         <section class="take-course">
             @guest
                 @if(Route::has('login') || Route::has('register'))
-                    <h3 class="text-success">Take a Singing Class</h3>
+                    <h3 style="color: #ffff00;">Take a Singing Class</h3>
                     <div>
                         <a href="{{url('/register')}}">
-                            <button type="button" class="btn btn-outline-secondary mr-2" style="width: clamp(6em,22vw,16em);">Register</button>
+                            <button type="button" class="btn btn-outline-light mr-2" style="width: clamp(6em,22vw,16em);">Register</button>
                         </a>
                     </div>
                 @endif
@@ -32,7 +32,7 @@
             @endguest
         </section>
         <p>
-            <a href="https://chat.whatsapp.com/HxsMG3XmzxlG4EJdGZ6SGb " target="_blank" rel="noopener noreferrer" class="text-decoration-none">Join on WhatsApp</a>
+            <a href="https://chat.whatsapp.com/HxsMG3XmzxlG4EJdGZ6SGb" target="_blank" rel="noopener noreferrer" class="text-decoration-none" class="text-decoratioin-none"><span>Join on WhatsApp</span></a>
         </p>
     </div>
 </div>
@@ -44,7 +44,7 @@
     </div>
     <div class="service-card container" style="padding: 1em;">
         <a href="">
-            <div class="card shadow" style="width: 22rem;">
+            <div class="card shadow" style="width: 20rem;">
             <a href="">
                 <img src="asset/images/coding.jpg" class="card-img-top img-fluid" alt="...">
             </a>
@@ -58,7 +58,7 @@
             </div>
         </div>
         </a>
-        <div class="card shadow" style="width: 22rem;">
+        <div class="card shadow" style="width: 20rem;">
             <a href="">
                 <img src="asset/images/web.jpg" class="card-img-top img-fluid" alt="...">
             </a>
@@ -71,7 +71,7 @@
                 <h4 class="card-title text-center font-weight-bold">Graphical Design</h4>
             </div>
         </div>
-        <div class="card shadow" style="width: 22rem;">
+        <div class="card shadow" style="width: 20rem;">
             <a href="{{route('services')}}">
                 <img src="asset/images/music.jpg" class="card-img-top img-fluid" alt="...">
             </a>
@@ -98,14 +98,14 @@
     <div class="creation container text-center">
         <h1>What you think, we can create</h1>
         <br>
-        <h6>The idea of surfing through popular technologies, open new heights to what you need.</h6>
+            <h6>The idea of surfing through popular technologies, open new heights to what you need.</h6>
         <br>
         <button type="button" class="btn btn-outline-secondary mr-2 btn-md" class="btn btn-outline-secondary mr-2" style="width: clamp(6em,19vw,16em);">Projects</button>
     </div>
 </article>
 <section class="portfolio">
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="max-width: 50em; margin: 0 auto;">
-        <a href="http://">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="max-width: 50em; margin: 0 auto; font-size:9px;">
+        <a href="">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="asset/images/portfolio/bio.jpg" class="d-block w-100 img-fluid" alt="...">
@@ -128,4 +128,17 @@
         </button>
     </div>
 </section>
+<div class="ceo">
+    <div class="ceo-box">
+        <div>
+            <img src="asset/images/other/moonga.png" width="200px" alt="mcair" class="rounded-circle" style="background-color:white;">
+        </div>
+        <div>
+            <img src="asset/images/other/mudimba.jpg" width="200px" alt="mcair" class="rounded-circle">
+        </div>
+        <div>
+            <img src="asset/images/other/muntanga.jpg" width="200px" alt="mcair" class="rounded-circle">
+        </div>
+    </div>
+</div>
 @endsection

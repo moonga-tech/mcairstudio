@@ -14,7 +14,10 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                <ul>
+                    <li><a href="{{route('course')}}">Course - (Music-Class)</a></li>
+                    <li><a href="#">Create a blog</a></li>
+                </ul>
                 </div>
             </div>
         </div>

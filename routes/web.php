@@ -26,9 +26,10 @@ Route::controller(AppController::class)->group(function() {
     Route::get('/contact-us', [AppController::class, 'contact'])->name('contact');
     Route::post('/contact-us', [AppController::class, 'contactPost']);
     /* -- music-class -- */
-    Route::get('/course', [AppController::class, 'course'])->name('course');
+    Route::controller(AppController::class)->group(function() {
+        Route::get('/course', [AppController::class, 'course'])->name('course')->middleware('auth');    
+    });
 });
-
 
 Auth::routes();
 

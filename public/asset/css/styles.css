@@ -1,15 +1,17 @@
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
-body {
-    font-size: 15px;
+body,html {
+    font-size: 17px;
 }
 h1 {
-    opacity: .7;
+    opacity: .6;
 }
-
+.creation h1,.banner p {
+    text-transform: capitalize;
+}
 .collapse {
-    font-weight: bold;
+    font-weight: bolder;
 }
 .top-nav {
     width: 100%;
@@ -21,16 +23,39 @@ h1 {
     width:clamp(6em,7vw,16em); 
     margin:0 1em;
 }
-/* banner */
-.banner {
-    min-height: 35em;
-    background-image: url(../images/b.jpg);
+/* clearing-code-duplicates */
+.banner,article {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(175, 175, 175);
     padding: 3em;
+}
+.banner-content h1 {
+    color: rgb(2, 69, 71);
+}
+.service-card,article,.copyright,.social {
+    display: flex;
+}
+.card, .ceo div {
+    margin: 1em .6em;
+}
+.service-card,article {
+    justify-content: center;
+}
+.service-card,.copyright {
+    flex-wrap: wrap;
+}
+.copyright {
+    justify-content: space-between;
+}
+/* clearing-code-duplicates */
+/* --------------------- */
+/* banner */
+.banner {
+    min-height: 30em;
+    background-image: url(../images/banner-1.jpg);
     color: white;
     max-width: 100%;  
 }
@@ -41,88 +66,69 @@ h1 {
     font-weight: bold;
 }
 .banner p {
-    text-transform: capitalize;
     max-width: 65%;
     margin: 2em 0;
-    color: rgb(167, 128, 0);
 }
-.service-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-article {
+article,.ceo {
     min-height: 24em;
-    background-image: url(../images/b1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: multiply;
     background-color: rgb(43, 43, 43);
-    padding: 2em;
     color: white;
-    display: flex;
-    justify-content: center;
+}
+article {
+    background-image: url(../images/b1.jpg);
     align-items: center;
 }
 .portfolio {
     padding: 5em;
 }
-/* footer */
-.footer-top, .social {
+.ceo {
+    background-image: url(../images/b1.jpg);
+    background-color: #198754;
+    background-blend-mode: multiply;
+    padding: 2em;
+    min-height: auto;
+}
+.ceo-box {
     display: flex;
-}
-/* *********************** */
-.footer-top {
-    color: white;
-    padding: 1em 0;
-}
-.newsletter h1, 
-.newsletter h5, 
-.social h4, 
-.partner-rights,
-.creation h1
-{
-    text-transform: capitalize;
-}
-.newsletter h5 {
-    color: rgba(235, 59, 28, 0.897);
-}
-.info form input {
-    width: 28em;
-}
-.footer-slogan {
-    margin: 2em 0;
-}
-.social {
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 5em;
     max-width: 100%;
 }
-.social h6 {
-    margin: 1em 0;
+.ceo-box div img {
+    width: 200px;
 }
-.social h6 a {
+
+/* #198754 */
+/* ----- footer ----- */
+
+.copyright {
     color: white;
+    min-height: 100%;
+    padding: 1em;
+}
+
+.social img{
+    width: 28px;
+    transition: all 0.5s linear;
+}
+.social img:hover {
+    transform: scaleX(1.1);
+}
+.social-icons i a {
     text-decoration: none;
 }
-.social i img {
-    width: 25px;
-    opacity: .8;
-    color: red;
+span small {
+    color:rgb(8, 187, 127);
 }
-.copyright {
-    margin: 1em 0;
-}
-/* *********************** */
+/* ----- footer ----- */
+
 /* -- page services -- */
 .services {
     margin: 2em 0;
 }
 /*  */
-.card {
-    margin: 1em .6em;
-}
+
 /* media query */
 @media screen and (max-width: 1000px) {
     .top-nav li {
@@ -132,12 +138,26 @@ article {
         margin: 1em auto;
         width:clamp(10em,10vw,16em); 
     }
+    .company,.social {
+        margin: 0 auto;
+    }
+    .social {
+        flex-direction: column;
+    }
+    .social-icons {
+        margin: 1em auto;
+    }
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 590px) {
     .banner {
         text-align: center;
     }
     .banner p {
         max-width: 100%;
     }
+    
+}
+/* -- ** music-course ** -- */
+.course-content {
+    margin: 1em;
 }
