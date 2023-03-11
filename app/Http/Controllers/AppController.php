@@ -30,4 +30,8 @@ class AppController extends Controller
     public function contactPost() {
         return redirect('/contact-us')->with('msg', 'Message Sent');
     }
+    public function projects()
+    {
+        return view('pages.projects');
+    }
 }

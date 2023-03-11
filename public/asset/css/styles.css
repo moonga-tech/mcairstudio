@@ -29,11 +29,11 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
-    background-color: rgb(175, 175, 175);
+    background-color: rgb(100, 100, 100);
     padding: 3em;
 }
-.banner-content h1 {
-    color: rgb(2, 69, 71);
+.banner-content h1, .join-whatsapp a span {
+    color: #10c1ee;
 }
 .service-card,article,.copyright,.social {
     display: flex;
@@ -58,6 +58,7 @@ h1 {
     background-image: url(../images/banner-1.jpg);
     color: white;
     max-width: 100%;  
+    text-align: center;
 }
 .banner h1 {
     font-size: clamp(1.5rem, 3vw, 3rem);
@@ -67,7 +68,7 @@ h1 {
 }
 .banner p {
     max-width: 65%;
-    margin: 2em 0;
+    margin: 2em auto;
 }
 article,.ceo {
     min-height: 24em;
@@ -83,7 +84,7 @@ article {
 }
 .ceo {
     background-image: url(../images/b1.jpg);
-    background-color: #198754;
+    background-color: #198778;
     background-blend-mode: multiply;
     padding: 2em;
     min-height: auto;
@@ -119,7 +120,7 @@ article {
     text-decoration: none;
 }
 span small {
-    color:rgb(8, 187, 127);
+    color: #198778;
 }
 /* ----- footer ----- */
 
@@ -128,6 +129,22 @@ span small {
     margin: 2em 0;
 }
 /*  */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projects div {
+    margin: 1em 1em;
+}
+.projects img {
+    width: 15em;
+    cursor: pointer;
+}
+.projects img:hover {
+    transition: all 0.5 linear;
+    transform: translateX(1.1);
+}
 
 /* media query */
 @media screen and (max-width: 1000px) {

@@ -25,6 +25,7 @@ Route::controller(AppController::class)->group(function() {
     Route::get('/privacy-policy', [AppController::class, 'privacyPolicy'])->name('privacy-policy');
     Route::get('/contact-us', [AppController::class, 'contact'])->name('contact');
     Route::post('/contact-us', [AppController::class, 'contactPost']);
+    Route::get('/projects', [AppController::class, 'projects'])->name('projects');
     /* -- music-class -- */
     Route::controller(AppController::class)->group(function() {
         Route::get('/course', [AppController::class, 'course'])->name('course')->middleware('auth');    

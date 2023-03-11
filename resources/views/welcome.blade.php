@@ -18,7 +18,7 @@
                     <h3 style="color: #ffff00;">Take a Singing Class</h3>
                     <div>
                         <a href="{{url('/register')}}">
-                            <button type="button" class="btn btn-outline-light mr-2" style="width: clamp(6em,22vw,16em);">Register</button>
+                            <button type="button" class="btn btn-outline-success mr-2" style="width: clamp(6em,22vw,16em);">Register</button>
                         </a>
                     </div>
                 @endif
@@ -31,8 +31,8 @@
                     </div>
             @endguest
         </section>
-        <p>
-            <a href="https://chat.whatsapp.com/HxsMG3XmzxlG4EJdGZ6SGb" target="_blank" rel="noopener noreferrer" class="text-decoration-none" class="text-decoratioin-none"><span>Join on WhatsApp</span></a>
+        <p class="join-whatsapp">
+            <a href="https://chat.whatsapp.com/HxsMG3XmzxlG4EJdGZ6SGb" target="_blank" rel="noopener noreferrer" class="text-decoration-none"><span>Join on WhatsApp</span></a>
         </p>
     </div>
 </div>
@@ -45,7 +45,7 @@
     <div class="service-card container" style="padding: 1em;">
         <a href="">
             <div class="card shadow" style="width: 20rem;">
-            <a href="">
+            <a href="{{route('services')}}">
                 <img src="asset/images/coding.jpg" class="card-img-top img-fluid" alt="...">
             </a>
             <div class="card-body">
@@ -59,7 +59,7 @@
         </div>
         </a>
         <div class="card shadow" style="width: 20rem;">
-            <a href="">
+            <a href="{{route('services')}}">
                 <img src="asset/images/web.jpg" class="card-img-top img-fluid" alt="...">
             </a>
             <div class="card-body">
@@ -90,7 +90,7 @@
             <button class="btn btn-md mr-2 btn-success" class="btn btn-outline-secondary mr-2" style="width: clamp(6em,16vw,16em);">View More</button>
         </a>
     </div>
-    <div style="">
+    <div>
         <hr style="width: 20%; margin: 1em auto;">
     </div>
 </section>
@@ -100,21 +100,24 @@
         <br>
             <h6>The idea of surfing through popular technologies, open new heights to what you need.</h6>
         <br>
-        <button type="button" class="btn btn-outline-secondary mr-2 btn-md" class="btn btn-outline-secondary mr-2" style="width: clamp(6em,19vw,16em);">Projects</button>
+        <button type="button" class="btn btn-outline-secondary mr-2 btn-md" style="width: clamp(6em,19vw,16em);">Projects</button>
     </div>
 </article>
 <section class="portfolio">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="max-width: 50em; margin: 0 auto; font-size:9px;">
-        <a href="">
+        <a href="{{route('projects')}}">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="asset/images/portfolio/bio.jpg" class="d-block w-100 img-fluid" alt="...">
+                </div>
+                <div class="carousel-item active">
+                    <img src="asset/images/portfolio/1.jpg" class="d-block w-100 img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="asset/images/portfolio/bio-2.jpg" class="d-block w-100 img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="asset/images/portfolio/bio-3.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <img src="asset/images/portfolio/tinkale.jpg" class="d-block w-100 img-fluid" alt="...">
                 </div>
             </div>
         </a>
