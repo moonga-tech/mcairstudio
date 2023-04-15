@@ -8,8 +8,6 @@
     <h1 class="text-center">Projects and Portfolios</h1>
     <span>
         <hr style="width: 15%; margin: 1em auto;">
-        <bdo dir="rtl">hi my name is rober</bdo>
-        <bdo dir="ltr">i am a robot</bdo>
     </span>
     <div class="projects">
         <div>
@@ -31,6 +29,5 @@
             <img src="asset/images/portfolio/2.jpg" alt="" class="img-fluid" srcset="">
         </div>
     </div>
-    
 </div>
 @endsection

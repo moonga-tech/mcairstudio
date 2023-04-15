@@ -24,10 +24,10 @@
                     </ul>
                 </li>
                 <li class="nav-item"><a href="{{route('about')}}" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Blogs</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="{{route('blogs')}}" class="nav-link">Blogs</a></li>
+                <li class="nav-item"><a href="{{route('projects')}}" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
-                <button type="button" class="btn btn-outline-success" onclick="AppBtn()" style="width:clamp(10em,10vw,16em);">Get App</button>
+                <!-- <button type="button" class="btn-ot-blue-6" onclick="AppBtn()">Get App</button> -->
             </ul>
 
             <!-- Right Side Of Navbar -->
@@ -48,6 +48,7 @@
                 @else
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        <i><img src="asset/images/icon/user.svg" alt="" srcset=""></i>
                             {{ Auth::user()->name }}
                         </a>
 
@@ -57,7 +58,7 @@
                             <hr class="dropdown-divider">
                             <a class="dropdown-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
-                                            document.getElementById('logout-form').submit();">
+                                document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -70,3 +71,13 @@
         </div>
     </div>
 </nav>
+
+<script>
+    function AppBtn() {
+        swal({
+            title: "Important Notice",
+            text: "Our App is under development, soon to notify! Thank you.",
+            icon: "warning",
+        })
+    }
+</script>

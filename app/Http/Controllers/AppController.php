@@ -34,4 +34,7 @@ class AppController extends Controller
     {
         return view('pages.projects');
     }
+    public function blogs() {
+        return view('pages.blogs-folder.blogs');
+    }
 }

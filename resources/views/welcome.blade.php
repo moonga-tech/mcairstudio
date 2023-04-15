@@ -24,16 +24,15 @@
                 @endif
                     @else
                     <div>
-                        <h2>Welcome To Our Music Class</h2>
-                        <h5>
-                            <a href="{{route('course')}}">Go to Course</a>
-                        </h5>
+                        <h2>Welcome To User Access</h2>
+                        <div>
+                            <a href="{{route('home')}}">
+                                <button type="button" class="btn btn-primary mr-1 btn-lg">Dashboard</button>
+                            </a>
+                        </div>
                     </div>
             @endguest
         </section>
-        <p class="join-whatsapp">
-            <a href="https://chat.whatsapp.com/HxsMG3XmzxlG4EJdGZ6SGb" target="_blank" rel="noopener noreferrer" class="text-decoration-none"><span>Join on WhatsApp</span></a>
-        </p>
     </div>
 </div>
 <section class="text-center service-card-div">

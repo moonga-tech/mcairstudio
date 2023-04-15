@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities; */
 body,html {
+    font-size: default;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-size: 17px;
+}
+i img {
+    width: 1em;
 }
 h1 {
     opacity: .6;
@@ -14,7 +23,7 @@ h1 {
     font-weight: bolder;
 }
 .top-nav {
-    width: 100%;
+    width: 70%;
 }
 .top-nav li, .auth-nav li {
     margin: 0 auto;
@@ -124,10 +133,6 @@ span small {
 }
 /* ----- footer ----- */
 
-/* -- page services -- */
-.services {
-    margin: 2em 0;
-}
 /*  */
 .projects {
     display: flex;
@@ -145,7 +150,12 @@ span small {
     transition: all 0.5 linear;
     transform: translateX(1.1);
 }
-
+/*  */
+.blog-create-btn {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
 /* media query */
 @media screen and (max-width: 1000px) {
     .top-nav li {
@@ -177,4 +187,8 @@ span small {
 /* -- ** music-course ** -- */
 .course-content {
     margin: 1em;
+}
+
+.div-wrapper {
+    margin: 1em 0;
 }
