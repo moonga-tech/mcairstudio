@@ -80,7 +80,6 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                m
                 <h4 class="card-title text-center font-weight-bold">Music Production</h4>
             </div>
         </div>

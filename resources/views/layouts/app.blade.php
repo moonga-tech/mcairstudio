@@ -14,6 +14,7 @@
     
     <!-- Google Details -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3075971117498364" crossorigin="anonymous"></script>
+    <meta name="google-site-verification" content="URfhmUqUqaOtCuPZgGyftQRsH_PwKE73mU2hrPC3tnc" />
     <!-- Google-Details -->
 
     <title>@yield('page-title')</title>
