@@ -45,7 +45,7 @@
         <a href="">
             <div class="card shadow" style="width: 20rem;">
             <a href="{{route('services')}}">
-                <img src="asset/images/coding.jpg" class="card-img-top img-fluid" alt="...">
+                <img src="asset/images/code.jpg" class="card-img-top img-fluid" alt="...">
             </a>
             <div class="card-body">
                     <i class="fa-light fa-star"></i>
@@ -59,7 +59,7 @@
         </a>
         <div class="card shadow" style="width: 20rem;">
             <a href="{{route('services')}}">
-                <img src="asset/images/web.jpg" class="card-img-top img-fluid" alt="...">
+                <img src="asset/images/art.jpg" class="card-img-top img-fluid" alt="...">
             </a>
             <div class="card-body">
                     <i class="fa-solid fa-star"></i>
@@ -75,11 +75,12 @@
                 <img src="asset/images/music.jpg" class="card-img-top img-fluid" alt="...">
             </a>
             <div class="card-body">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                m
                 <h4 class="card-title text-center font-weight-bold">Music Production</h4>
             </div>
         </div>
@@ -99,7 +100,9 @@
         <br>
             <h6>The idea of surfing through popular technologies, open new heights to what you need.</h6>
         <br>
-        <button type="button" class="btn btn-outline-secondary mr-2 btn-md" style="width: clamp(6em,19vw,16em);">Projects</button>
+        <a href="{{route('projects')}}">
+            <button type="button" class="btn btn-outline-secondary mr-2 btn-md" style="width: clamp(6em,19vw,16em);">Projects</button>
+        </a>
     </div>
 </article>
 <section class="portfolio">
