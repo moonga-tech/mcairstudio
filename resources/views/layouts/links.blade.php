@@ -7,6 +7,7 @@
 
 <link rel="stylesheet" href="{{asset('asset/css/app.css')}}">
 <link rel="stylesheet" href="{{asset('asset/css/styles.css')}}">
+<link rel="stylesheet" href="{{asset('asset/css/buttons.css')}}">
 <link rel="stylesheet" href="{{asset('asset/sass/app.scss')}}">
 
 <!-- FAVICON -->

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md bg-white shadow-sm">
+<nav class="navbar navbar-expand-md bg-white shadow-sm fixed-top">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
             <img src="{{asset('/asset/images/logo.png')}}" alt="logo" srcset="" width="50px">
@@ -16,9 +16,9 @@
                         Services
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Computer Programming</a></li>
-                        <li><a class="dropdown-item" href="#">Graphical Design</a></li>
-                        <li><a class="dropdown-item" href="#">Music Producition</a></li>
+                        <li><a class="dropdown-item" href="{{route('services')}}">Computer Programming</a></li>
+                        <li><a class="dropdown-item" href="{{route('services')}}">Graphical Design</a></li>
+                        <li><a class="dropdown-item" href="{{route('services')}}">Music Production</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Event and News</a></li>
                     </ul>
@@ -42,7 +42,7 @@
 
                     @if (Route::has('register'))
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a class="nav-link" href="{{ route('register') }}"><button class="btn btn-danger">{{ __('Register') }}</button></a>
                         </li>
                     @endif
                 @else

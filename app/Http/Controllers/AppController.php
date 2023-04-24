@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\CreateBlog;
+
 
 class AppController extends Controller
 {
@@ -35,6 +37,7 @@ class AppController extends Controller
         return view('pages.projects');
     }
     public function blogs() {
-        return view('pages.blogs-folder.blogs');
+        $data = CreateBlog::all();
+        return view('pages.blog-folder.blogs',['data' => $data]);
     }
 }

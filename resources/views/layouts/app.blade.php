@@ -25,7 +25,7 @@
 <body>
     <div id="app">
         @include('layouts.header')
-        <main>
+        <main class="mb-4">
             @yield('content')
         </main>
         @include('layouts.footer')

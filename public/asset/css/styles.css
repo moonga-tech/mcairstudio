@@ -1,6 +1,11 @@
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
+/* #8CA9D3,F26659 */
+:root {
+    --p-color: #F26659;
+    --s-color: #3663a1;
+}
 body,html {
     font-size: default;
 }
@@ -10,44 +15,56 @@ body,html {
     box-sizing: border-box;
     font-size: 17px;
 }
+main hr {
+    border: 1px solid var(--s-color);
+}
 i img {
     width: 1em;
 }
-h1 {
-    opacity: .6;
+.home-card img {
+    width: 16em;
 }
-.creation h1,.banner p {
-    text-transform: capitalize;
+h1,h2,h3,h4,h5,h6,p,small,.dropdown-item,label {
+    opacity: .8;
 }
 .collapse {
-    font-weight: bolder;
+    width: 100%;
+    font-weight: bold;
+}
+.dropdown-item {
+    font-weight: bold;
 }
 .top-nav {
-    width: 70%;
+    width: 65%;
 }
 .top-nav li, .auth-nav li {
     margin: 0 auto;
 }
-.top-nav button {
-    width:clamp(6em,7vw,16em); 
-    margin:0 1em;
+main {
+    margin: 5em 0 0 0;
 }
 /* clearing-code-duplicates */
-.banner,article {
+.banner {
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    padding: 3em;
+    background-color: rgb(255, 255, 255);
+}
+article {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: multiply;
-    background-color: rgb(100, 100, 100);
     padding: 3em;
+    background-blend-mode: multiply;
+    background-color: var(--p-color);
 }
-.banner-content h1, .join-whatsapp a span {
-    color: #10c1ee;
+.banner-content h1{
+    color: var(--p-color);
 }
 .service-card,article,.copyright,.social {
     display: flex;
 }
-.card, .ceo div {
+.service-card .card, .ceo-box .card {
     margin: 1em .6em;
 }
 .service-card,article {
@@ -64,22 +81,38 @@ h1 {
 /* banner */
 .banner {
     min-height: 30em;
-    background-image: url(../images/banner-1.jpg);
-    color: white;
+    background-image: url(../images/ba.jpg);
     max-width: 100%;  
-    text-align: center;
+}
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    margin: 4em 0;
 }
 .banner h1 {
     font-size: clamp(1.5rem, 3vw, 3rem);
     letter-spacing: 5px;
-    text-transform: uppercase;
     font-weight: bold;
 }
 .banner p {
-    max-width: 65%;
-    margin: 2em auto;
+    max-width: 60%;
+    margin: 1em 0;
 }
-article,.ceo {
+.count-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    bottom: 25px;
+}
+.count-wrapper div {
+    margin: 1em 3em;
+    padding: 2em 5em;
+    border-radius: 10px;
+    font-size: 10px;
+}
+article {
     min-height: 24em;
     background-color: rgb(43, 43, 43);
     color: white;
@@ -90,13 +123,7 @@ article {
 }
 .portfolio {
     padding: 5em;
-}
-.ceo {
-    background-image: url(../images/b1.jpg);
-    background-color: #198778;
-    background-blend-mode: multiply;
-    padding: 2em;
-    min-height: auto;
+    height: 30em;
 }
 .ceo-box {
     display: flex;
@@ -123,16 +150,15 @@ article {
     transition: all 0.5s linear;
 }
 .social img:hover {
-    transform: scaleX(1.1);
+    transform: translateX(1.1);
 }
 .social-icons i a {
     text-decoration: none;
 }
-span small {
-    color: #198778;
-}
 /* ----- footer ----- */
-
+footer small {
+    color: var(--p-color);
+}
 /*  */
 .projects {
     display: flex;
@@ -178,11 +204,14 @@ span small {
 @media screen and (max-width: 590px) {
     .banner {
         text-align: center;
+        background-blend-mode: multiply;
+        background-color: rgb(233, 233, 233);
     }
     .banner p {
         max-width: 100%;
+        color: var(--p-color);
+        text-shadow: 1px 2px 1px black;
     }
-    
 }
 /* -- ** music-course ** -- */
 .course-content {

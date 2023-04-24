@@ -1,38 +1,31 @@
 @extends('layouts.app')
-@section('page-title', 'Mcair-Studio-Tech | Home-Page')
+@section('page-title', 'Home Page')
 @section('meta_keywords','Home-Page, Sections, Mcair Studio and Tech')
 @section('meta_description', 'https://mcairstudiotech.art, this is our home page where you can view all relevant content on our website.')
 
 @section('content')
-<div class="banner">
+<div class="banner shadow">
     <div class="container banner-content">
-        <h1>Mcair Studios and Tech</h1>
-        <p>
+        <div>
+            <h1 class="text-capitalize">mcair studios and tech</h1>
+            <small><h5 class="text-capitalize">the future is technology</h5></small>
+        </div>
+        <p class="text-capitalize">
             " the creation of content to your desired expectation.
             The future of graphical design, music production and compute Programming
             is in your hands, with the help of AI ".
         </p>
-        <section class="take-course">
-            @guest
-                @if(Route::has('login') || Route::has('register'))
-                    <h3 style="color: #ffff00;">Take a Singing Class</h3>
-                    <div>
-                        <a href="{{url('/register')}}">
-                            <button type="button" class="btn btn-outline-success mr-2" style="width: clamp(6em,22vw,16em);">Register</button>
-                        </a>
-                    </div>
-                @endif
-                    @else
-                    <div>
-                        <h2>Welcome To User Access</h2>
-                        <div>
-                            <a href="{{route('home')}}">
-                                <button type="button" class="btn btn-primary mr-1 btn-lg">Dashboard</button>
-                            </a>
-                        </div>
-                    </div>
-            @endguest
-        </section>
+    </div>
+</div>
+<div class="count-wrapper container">
+    <div class="shadow">
+        <h1>4567</h1>
+    </div>
+    <div class="shadow">
+        <h1>7654</h1>
+    </div>
+    <div class="shadow">
+        <h1>4567</h1>
     </div>
 </div>
 <section class="text-center service-card-div">
@@ -43,21 +36,21 @@
     </div>
     <div class="service-card container" style="padding: 1em;">
         <a href="">
-            <div class="card shadow" style="width: 20rem;">
-            <a href="{{route('services')}}">
-                <img src="asset/images/code.jpg" class="card-img-top img-fluid" alt="...">
-            </a>
-            <div class="card-body">
-                    <i class="fa-light fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>                
-                    <h4 class="card-title text-center font-weight-bold">Computer Programming</h4>
+            <div class="card shadow home-card" style="width: 20rem;">
+                <a href="{{route('services')}}">
+                    <img src="asset/images/code.jpg" class="card-img-top img-fluid" alt="...">
+                </a>
+                <div class="card-body">
+                        <i class="fa-light fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>                
+                        <h4 class="card-title text-center font-weight-bold">Computer Programming</h4>
+                </div>
             </div>
-        </div>
         </a>
-        <div class="card shadow" style="width: 20rem;">
+        <div class="card shadow home-card" style="width: 20rem;">
             <a href="{{route('services')}}">
                 <img src="asset/images/art.jpg" class="card-img-top img-fluid" alt="...">
             </a>
@@ -70,7 +63,7 @@
                 <h4 class="card-title text-center font-weight-bold">Graphical Design</h4>
             </div>
         </div>
-        <div class="card shadow" style="width: 20rem;">
+        <div class="card shadow home-card" style="width: 20rem;">
             <a href="{{route('services')}}">
                 <img src="asset/images/music.jpg" class="card-img-top img-fluid" alt="...">
             </a>
@@ -86,7 +79,7 @@
     </div>
     <div style="margin:2em;">
         <a href="{{route('services')}}">
-            <button class="btn btn-md mr-2 btn-success" class="btn btn-outline-secondary mr-2" style="width: clamp(6em,16vw,16em);">View More</button>
+            <button class="btn btn-md mr-2 btn-danger" style="width: clamp(6em,16vw,16em);">View More</button>
         </a>
     </div>
     <div>
@@ -95,12 +88,12 @@
 </section>
 <article>
     <div class="creation container text-center">
-        <h1>What you think, we can create</h1>
+        <h1 class="text-capitalize">What you think, we can create</h1>
         <br>
             <h6>The idea of surfing through popular technologies, open new heights to what you need.</h6>
         <br>
         <a href="{{route('projects')}}">
-            <button type="button" class="btn btn-outline-secondary mr-2 btn-md" style="width: clamp(6em,19vw,16em);">Projects</button>
+            <button type="button" class="btn btn-outline-danger mr-2 btn-md" style="width: clamp(6em,19vw,16em);">Projects</button>
         </a>
     </div>
 </article>
@@ -132,17 +125,43 @@
         </button>
     </div>
 </section>
-<div class="ceo">
-    <div class="ceo-box">
+
+<section>
+    <div>
+        <h1 class="text-capitalize text-center">partnership | Sponsors</h1>
         <div>
-            <img src="asset/images/other/moonga.png" width="200px" alt="mcair" class="rounded-circle" style="background-color:white;">
-        </div>
-        <div>
-            <img src="asset/images/other/mudimba.jpg" width="200px" alt="mcair" class="rounded-circle">
-        </div>
-        <div>
-            <img src="asset/images/other/muntanga.jpg" width="200px" alt="mcair" class="rounded-circle">
+            <hr style="width: 20%; margin: 1em auto;">
         </div>
     </div>
-</div>
+    
+    <div class="ceo-box">
+        <div class="card shadow text-center" style="width: 16rem;">
+            <a href="#">
+                <img src="asset/images/other/moonga.png" width="200px" alt="mcair" class="rounded-circle img-fluid" style="background-color:white;">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title text-center font-weight-bold">Moonga Manongo</h4>
+                <small>mcairstudiotech.art</small>
+            </div>
+        </div>
+        <div class="card shadow text-center" style="width: 16rem;">
+            <a href="#">
+                <img src="asset/images/other/mudimba.jpg" width="200px" alt="mcair" class="rounded-circle img-fluid" style="background-color:white;">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title text-center font-weight-bold">Alex Mudimba Moonde</h4>
+                <small>mudimbasoftware company</small>
+            </div>
+        </div>
+        <div class="card shadow text-center" style="width: 16rem;">
+            <a href="#">
+                <img src="asset/images/other/muntanga.jpg" width="200px" alt="mcair" class="rounded-circle img-fluid" style="background-color:white;">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title text-center font-weight-bold text-capitalize">muntanga hatembo</h4>
+                <small>Hats HD | Quality Everything</small>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection

@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AppController;
-use App\Http\Controllers\UserviewController;
+use App\Http\Controllers\CreateBlogController;
 
 
 /*
@@ -36,8 +36,8 @@ Route::controller(AppController::class)->group(function() {
 });
 /* -- -- */
 Route::middleware('auth')->controller('UserviewController::class')->group(function() {
-    Route::get('/blogs-create', [UserviewController::class, 'createBlog'])->name('createBlog');
-    Route::post('/blogs-create', [UserviewController::class, 'postBlog']);
+    Route::get('/create-blog', [CreateBlogController::class, 'createBlog'])->name('createBlog');
+    Route::post('/create-blog', [CreateBlogController::class, 'postBlog']);
 });
 
 Auth::routes();

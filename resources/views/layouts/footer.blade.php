@@ -21,9 +21,9 @@
                     <li><a href="#">Also check out our blogs</a></li>
                 </div> -->
 
-<footer>
-    <div class="bg-dark">
-        <div class="copyright container">
+<footer class="bg-dark">
+    <div class="container">
+        <div class="copyright">
             <div class="social">
                 <div class="social-icons">
                     <i>

@@ -11,9 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('userviews', function (Blueprint $table) {
+        Schema::create('create_blogs', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('blog_title');
+            /* $table->string('image'); */
+            $table->longText('editor');
         });
     }
 
@@ -22,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('userviews');
+        Schema::dropIfExists('create_blogs');
     }
 };
