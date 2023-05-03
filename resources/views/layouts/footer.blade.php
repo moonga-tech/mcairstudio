@@ -1,27 +1,17 @@
-<!-- <div>
-                    <h1>Partnered</h1>
-                    <li>Mudimba Software</li>
-                    <li>HD Hats</li>
-                    <li>Spinzol Beat & Mosente</li>
-                    <li>Mercy Sounds</li>
-                </div>
-                <div>
-                    <h1>Contact Us</h1>
-                    <li><a href="http://">Facabook</a></li>
-                    <li><a href="http://">Whatsapp | 0972273828</a></li>
-                    <li><a href="http://">Send Mail</a></li>
-                </div>
-                <div>
-                    <h1>Lessons and School</h1>
-                    <li>Music and Vocalism</li>
-                    <li>Programming</li>
-                    <li>Graphical Design</li>
-                    <li>Bricklaying and Plastering</li>
-                    <li>Automotive Mechanics</li>
-                    <li><a href="#">Also check out our blogs</a></li>
-                </div> -->
-
 <footer class="bg-dark">
+    <div class="container info">
+        <div>
+            
+        </div>
+        <div class="text-center">
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div>
+            <h4>Online School</h4>
+            <p>Online has become a vast and widely visited inter-network, Mcair has everything you need. <a href="#">Visit Mcair School</a></p>
+        </div>
+    </div>
     <div class="container">
         <div class="copyright">
             <div class="social">

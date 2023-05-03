@@ -23,6 +23,18 @@ class CreateBlogController extends Controller
         $data->editor = request('editor');
         $data->save();
 
-        return redirect("/blogs")->with("msg", "blog posted successfully");
+        return redirect()->back()->with("msg", "blog posted successfully");
+    }
+
+    /* ** -- update blogs ** */
+    public function updateBlogContent($id) {
+        $updateBlogContent = CreateBlog::find($id);
+
+        $updateBlogContent->blog_title = request('blog_title');
+        /* $updateBlogContent->image = request('image'); */
+        $updateBlogContent->editor = request('editor');
+        $updateBlogContent->update();
+
+        return redirect('/admin/view-blog')->back();
     }
 }

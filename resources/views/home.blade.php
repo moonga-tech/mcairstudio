@@ -8,16 +8,10 @@
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                <ul>
-                    <li><a href="{{route('course')}}">Course - (Music-Class)</a></li>
-                    <li><a href="{{route('createBlog')}}">Create a blog</a></li>
-                </ul>
+                    <ul>
+                        <li><a href="{{route('course')}}">Course - (Music-Class)</a></li>
+                        <li><a href="{{route('createBlog')}}">Create a blog</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

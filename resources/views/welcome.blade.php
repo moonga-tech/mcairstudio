@@ -128,7 +128,6 @@
 
 <section>
     <div>
-        <h1 class="text-capitalize text-center">partnership | Sponsors</h1>
         <div>
             <hr style="width: 20%; margin: 1em auto;">
         </div>

@@ -132,17 +132,19 @@ article {
     padding: 0 5em;
     max-width: 100%;
 }
+.ceo-box .card a {
+    padding: 1em;
+}
 .ceo-box div img {
     width: 200px;
 }
-
-/* #198754 */
 /* ----- footer ----- */
-
-.copyright {
+footer {
     color: white;
-    min-height: 100%;
-    padding: 1em;
+    padding: 1em 0 0 0;
+}
+footer .info a {
+    text-decoration: none;
 }
 
 .social img{
@@ -177,10 +179,19 @@ footer small {
     transform: translateX(1.1);
 }
 /*  */
-.blog-create-btn {
-    max-width: 100%;
-    display: flex;
-    justify-content: flex-end;
+.blogs .card {
+    margin: 1em 0;
+}
+.blogs .card img {
+    width: 16em;
+    float:left;
+}
+/* ......... */
+.google-map-banner {
+    min-height: 30vh;
+}
+.color-redd {
+    color: var(--p-color);
 }
 /* media query */
 @media screen and (max-width: 1000px) {

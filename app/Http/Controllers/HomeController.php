@@ -21,8 +21,34 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    /* public function index()
     {
         return view('home');
+    } */
+
+    public function userHome()
+    {
+        return view('home',["msg"=>"Hello! I am user"]);
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function editorHome()
+    {
+        return view('home',["msg"=>"Hello! I am editor"]);
+    }
+
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function adminHome()
+    {
+        return view('admin.dashboard');
     }
 }
