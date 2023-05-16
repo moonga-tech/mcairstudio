@@ -8,10 +8,12 @@
 <link rel="shortcut icon" href="{{asset('asset/images/logo.png')}}" type="image/x-icon">
 
 <!-- Styles -->
+
 <link rel="stylesheet" href="{{asset('asset/css/app.css')}}">
 <link rel="stylesheet" href="{{asset('asset/css/styles.css')}}">
 <link rel="stylesheet" href="{{asset('asset/css/admin.css')}}">
 <link rel="stylesheet" href="{{asset('asset/sass/app.scss')}}">
+<!-- <link rel="stylesheet" href="{{asset('asset/css/mcair.css')}}"> -->
 
 <!-- Scripts -->
 <script src="{{asset('asset/js/jquery-3.2.1.min.js')}}" defer></script>
@@ -19,3 +21,4 @@
 <script type="module" src="{{asset('asset/js/app.js')}}" defer></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
 <script src="{{asset('ckeditor/ckeditor.js')}}"></script>
+

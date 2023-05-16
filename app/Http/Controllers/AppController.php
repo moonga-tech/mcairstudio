@@ -37,7 +37,7 @@ class AppController extends Controller
         $data->message = request('message');
         $data->save();
 
-        return redirect('/contact-us')->with('msg', 'Message Sent');
+        return redirect()->back()->with('msg', 'Message Sent');
     }
     public function projects()
     {
@@ -52,5 +52,9 @@ class AppController extends Controller
         $blogID = CreateBlog::findOrFail($id);
 
         return view('pages.blog-folder.blog-id',['blogID' => $blogID,]);
+    }
+
+    public function test() {
+        return view('pages.test');
     }
 }

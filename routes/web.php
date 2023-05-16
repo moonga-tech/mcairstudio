@@ -25,6 +25,9 @@ Route::get('/', function () {
 
 /* -- routing pages -- */
 Route::controller(AppController::class)->group(function() {
+    Route::get('/test', [AppController::class, 'test'])->name('test');
+
+    
     Route::get('/services', [AppController::class, 'services'])->name('services');
     Route::get('/about', [AppController::class, 'about'])->name('about');
     Route::get('/privacy-policy', [AppController::class, 'privacyPolicy'])->name('privacy-policy');

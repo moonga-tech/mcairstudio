@@ -18,6 +18,10 @@
     <!-- Google-Details -->
 
     <title>@yield('page-title')</title>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="{{asset('asset/styles.css')}}">
+    
     
     @include('layouts.links')
 
@@ -30,5 +34,17 @@
         </main>
         @include('layouts.footer')
     </div>
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
+        <script>
+        requirejs.config({
+            baseUrl: '../dist',
+        });
+
+        require(['aos'], function(AOS){
+            AOS.init({
+                easing: 'ease-in-out-sine'
+            });
+        });
+        </script> -->
 </body>
 </html>

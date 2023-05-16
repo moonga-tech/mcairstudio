@@ -35,21 +35,19 @@
         <hr style="width: 20%; margin: 0 auto;">
     </div>
     <div class="service-card container" style="padding: 1em;">
-        <a href="">
-            <div class="card shadow home-card" style="width: 20rem;">
-                <a href="{{route('services')}}">
-                    <img src="asset/images/code.jpg" class="card-img-top img-fluid" alt="...">
-                </a>
-                <div class="card-body">
-                        <i class="fa-light fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>                
-                        <h4 class="card-title text-center font-weight-bold">Computer Programming</h4>
-                </div>
+        <div class="card shadow home-card" style="width: 20rem;">
+            <a href="{{route('services')}}">
+                <img src="asset/images/code.jpg" class="card-img-top img-fluid" alt="...">
+            </a>
+            <div class="card-body">
+                    <i class="fa-light fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>                
+                    <h4 class="card-title text-center font-weight-bold">Computer Programming</h4>
             </div>
-        </a>
+        </div>
         <div class="card shadow home-card" style="width: 20rem;">
             <a href="{{route('services')}}">
                 <img src="asset/images/art.jpg" class="card-img-top img-fluid" alt="...">
@@ -87,13 +85,16 @@
     </div>
 </section>
 <article>
+    <div class='console-container'><span ></span></div>
     <div class="creation container text-center">
-        <h1 class="text-capitalize">What you think, we can create</h1>
+        <h1 class="text-capitalize">What you think, 
+            <span id="text"></span><span class='console-underscore' id='console'>&#95;</span>
+        </h1>
         <br>
             <h6>The idea of surfing through popular technologies, open new heights to what you need.</h6>
         <br>
         <a href="{{route('projects')}}">
-            <button type="button" class="btn btn-outline-danger mr-2 btn-md" style="width: clamp(6em,19vw,16em);">Projects</button>
+            <button type="button" class="btn btn-outline-danger w-lg rounded">Projects</button>
         </a>
     </div>
 </article>
@@ -128,11 +129,11 @@
 
 <section>
     <div>
-        <div>
-            <hr style="width: 20%; margin: 1em auto;">
-        </div>
+        <hr style="width: 20%; margin: 1em auto;">
     </div>
-    
+    <div class="text-center">
+
+    </div>
     <div class="ceo-box">
         <div class="card shadow text-center" style="width: 16rem;">
             <a href="#">

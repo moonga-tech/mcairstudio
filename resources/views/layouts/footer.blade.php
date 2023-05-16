@@ -42,3 +42,9 @@
         </div>
     </div>
 </footer>
+
+<script src="{{asset('dist/aos.js')}}">
+AOS.init({
+        easing: 'ease-in-out-sine'
+    });
+</script>
