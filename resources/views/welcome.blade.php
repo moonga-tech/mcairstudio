@@ -94,7 +94,7 @@
             <h6>The idea of surfing through popular technologies, open new heights to what you need.</h6>
         <br>
         <a href="{{route('projects')}}">
-            <button type="button" class="btn btn-outline-danger w-lg rounded">Projects</button>
+            <button type="button" class="btn btn-outline-danger w-lg rounded" style="width: clamp(6em,16vw,16em);">Projects</button>
         </a>
     </div>
 </article>
@@ -136,7 +136,7 @@
     </div>
     <div class="ceo-box">
         <div class="card shadow text-center" style="width: 16rem;">
-            <a href="#">
+            <a href="https://bit.ly/3MDqrKj">
                 <img src="asset/images/other/moonga.png" width="200px" alt="mcair" class="rounded-circle img-fluid" style="background-color:white;">
             </a>
             <div class="card-body">
@@ -145,7 +145,7 @@
             </div>
         </div>
         <div class="card shadow text-center" style="width: 16rem;">
-            <a href="#">
+            <a href="https://bit.ly/3BEKUbw">
                 <img src="asset/images/other/mudimba.jpg" width="200px" alt="mcair" class="rounded-circle img-fluid" style="background-color:white;">
             </a>
             <div class="card-body">
@@ -154,7 +154,7 @@
             </div>
         </div>
         <div class="card shadow text-center" style="width: 16rem;">
-            <a href="#">
+            <a href="https://bit.ly/439C6WY">
                 <img src="asset/images/other/muntanga.jpg" width="200px" alt="mcair" class="rounded-circle img-fluid" style="background-color:white;">
             </a>
             <div class="card-body">

@@ -16,6 +16,9 @@
         </div>
     </div>
     <main class="shadow">
+        @foreach($data as $data)
+            <img src="{{ asset('blog-images/'.$data->image)}}" alt="img" srcset="">
+        @endforeach
     <form action="/create-blog" method="post" enctype="multipart/form-data">
     @csrf
     @method("POST")
@@ -24,7 +27,7 @@
             <input id="name" type="text" class="form-control" name="blog_title" required autocomplete="name" autofocus placeholder="Blog title">
         </div>
     </div>
-    <!-- <div class="div-wrapper">
+    <div class="div-wrapper">
         <div class="row mb-3">
             <label for="image"><h5>{{ __('Blog Image') }}</h5></label>
 
@@ -32,7 +35,7 @@
                 <input id="name" type="file" class="form-control" name="image" required autocomplete="name" autofocus placeholder="Image">
             </div>
         </div>
-    </div> -->
+    </div>
         <textarea name="editor" id="editor">
             Type your blog content here!
         </textarea>

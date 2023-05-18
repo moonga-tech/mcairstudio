@@ -34,7 +34,7 @@
                         <li><a class="dropdown-item" href="{{route('projects')}}">Computer Graphics</a></li>
                         <li><a class="dropdown-item" href="{{route('projects')}}">Music Production</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Git Hub User</a></li>
+                        <li><a class="dropdown-item" href="#">Visit Github Repo</a></li>
                     </ul>
                 </li>
                 <li class="nav-item"><a href="{{route('contact')}}" class="nav-link">Contact</a></li>

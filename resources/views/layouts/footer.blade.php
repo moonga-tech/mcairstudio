@@ -1,24 +1,46 @@
 <footer class="bg-dark">
+    <div class="container">
+        <h4>Online School</h4>
+
+        <p>Online has become a vast and widely visited inter-network, Mcair has everything you need. <!-- <a href="#">Visit Mcair School</a></p> -->
+    </div>
+
     <div class="container info">
         <div>
-            
-        </div>
-        <div class="text-center">
-            <a href="#">Terms and Conditions</a>
-            <a href="#">Privacy Policy</a>
+            <h4>Platforms</h4>
+            <ul>
+                <li class="nav-item"><a href="{{route('githubRepo')}}">github repository</a></li>
+                <li class="nav-item"><a href="{{route('musicCloudPage')}}">music cloud</a></li>
+                <li class="nav-item"><a href="{{route('behancePage')}}">behance</a></li>
+            </ul>
         </div>
         <div>
-            <h4>Online School</h4>
-            <p>Online has become a vast and widely visited inter-network, Mcair has everything you need. <a href="#">Visit Mcair School</a></p>
+            <h4>Policy and Conditions</h4>
+            <ul>
+                <li>
+                    <a href="{{route('termsAndConditions')}}">Terms and Conditions</a>
+                </li>
+                <li>
+                    <a href="{{route('privacyPolicy')}}">Privacy Policy</a>
+                </li>
+            </ul>
         </div>
+        <div>
+            <h4>More Information</h4>
+            <ul>
+                <li class="nav-item"><a href="">contact us</a></li>
+                <li class="nav-item"><a href="">about us</a></li>
+            </ul>
+        </div>        
     </div>
+
     <div class="container">
         <div class="copyright">
             <div class="social">
                 <div class="social-icons">
                     <i>
                         <a href="http://" target="_blank" rel="noopener noreferrer">
-                            <img src="asset/images/icon/f.png" alt="" srcset="">
+                            <img src="asset/images/icon/f.png" alt="https://bit.ly/43aL7ib" srcset="">
                         </a>
                     </i>
                     <i>
@@ -43,6 +65,7 @@
     </div>
 </footer>
 
+<!-- ckeditor script file -->
 <script src="{{asset('dist/aos.js')}}">
 AOS.init({
         easing: 'ease-in-out-sine'

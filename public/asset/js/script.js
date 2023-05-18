@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 /* modified code typing effect */
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['We Can Create', 'We Can Make', 'We Can Code'], 'text',['#fff','#fff','#fff']);
+consoleText(['We Can Create', 'We Can Make', 'We Can Code'], 'text',['#ffaf00','#f26659','#1b69d6']);
 
 function consoleText(words, id, colors) {
     if (colors === undefined) colors = ['#fff'];

@@ -11,15 +11,27 @@ class CreateBlogController extends Controller
         return view('pages.blog-folder.createBlog');
     }
     public function postBlog(Request $request) {        
-        /* $request->validate([
+        
+        $request->validate([
             'image' => 'required|image|mimes:png,jpg,jpeg|max:2048'
         ]);
-        $imageName = time().'.'.$request->image->extension(); */
 
+        $fileImage = time().'.'.$request->image->extension();
+
+        // Public Folder
+        $request->image->move(public_path('blog-images'), $fileImage);
+
+        // //Store in Storage Folder
+        //$request->image->storeAs('public/images', $fileImage);
+
+        // // Store in S3
+        // $request->image->storeAs('images', $$fileImage, 's3');
+
+        //Store IMage in DB 
         $data = new CreateBlog;
 
         $data->blog_title = request('blog_title');
-        /* $data->image = request('image'); */
+        $data->image = $fileImage;
         $data->editor = request('editor');
         $data->save();
 

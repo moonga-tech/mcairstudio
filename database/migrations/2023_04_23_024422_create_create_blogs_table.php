@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('blog_title');
-            /* $table->string('image'); */
+            $table->string('image');
             $table->longText('editor');
         });
     }

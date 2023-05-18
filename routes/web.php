@@ -25,17 +25,24 @@ Route::get('/', function () {
 
 /* -- routing pages -- */
 Route::controller(AppController::class)->group(function() {
-    Route::get('/test', [AppController::class, 'test'])->name('test');
+    /* Route::get('/test', [AppController::class, 'test'])->name('test'); */
 
-    
+    /* header pages */
     Route::get('/services', [AppController::class, 'services'])->name('services');
     Route::get('/about', [AppController::class, 'about'])->name('about');
-    Route::get('/privacy-policy', [AppController::class, 'privacyPolicy'])->name('privacy-policy');
     Route::get('/contact-us', [AppController::class, 'contact'])->name('contact');
     Route::post('/contact-us', [AppController::class, 'contactPost']);
     Route::get('/projects', [AppController::class, 'projects'])->name('projects');
     Route::get('/blogs', [AppController::class, 'blogs'])->name('blogs');
     Route::get('/blogs/{id}', [AppController::class, 'blogID'])->name('blogID');
+    Route::get('/privacy-policy', [AppController::class, 'privacyPolicy'])->name('privacyPolicy');
+    Route::get('/terms-and-conditions', [AppController::class, 'termsAndConditions'])->name('termsAndConditions');
+
+    /* footer pages */
+    Route::get('/mcair/github-repo', [AppController::class, 'githubRepo'])->name('githubRepo');
+    Route::get('/mcair/music-cloud', [AppController::class, 'musicCloudPage'])->name('musicCloudPage');
+    Route::get('/behance-content', [AppController::class, 'behancePage'])->name('behancePage');
+
     /* -- music-class -- */
     Route::controller(AppController::class)->group(function() {
         Route::get('/course', [AppController::class, 'course'])->name('course')->middleware('auth');    
@@ -54,7 +61,7 @@ Route::middleware(['auth','user-role:user'])->group(function()
 // ****** Route Admin ****** //
 Route::middleware(['auth','user-role:admin'])->group(function()
 {
-    Route::get("/admin/home",[HomeController::class, 'adminHome'])->name("admin.home");
+    Route::get("/admin/home",[AdminController::class, 'adminHome'])->name("admin.home");
     Route::get("/admin/view-blog",[AdminController::class, 'viewBlog'])->name("viewBlog");
     Route::get('/admin/update-blog/{id}', [AdminController::class, 'updateBlog'])->name('updateBlog');
     Route::put('/admin/update-blog/{id}', [CreateBlogController::class, 'updateBlogContent']);

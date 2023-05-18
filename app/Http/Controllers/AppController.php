@@ -21,9 +21,6 @@ class AppController extends Controller
         $companyName = 'Mcair-Studio-Tech';
         return view('pages.about', ['companyName' => $companyName]);
     }
-    public function privacyPolicy() {
-        return view('pages.privacy-policy');
-    }
     public function course() {
         return view('pages.music-course.course-1');
     }
@@ -53,8 +50,25 @@ class AppController extends Controller
 
         return view('pages.blog-folder.blog-id',['blogID' => $blogID,]);
     }
-
+    public function privacyPolicy() {
+        return view('pages.privacy-policy');
+    }
+    public function termsAndConditions() {
+        return view('pages.terms-conditions');
+    }
     public function test() {
         return view('pages.test');
+    }
+    /* 
+    ****** footer pages *******
+    */
+    public function githubRepo() {
+        return view('pages.footer-pages.github-repo');
+    }
+    public function musicCloudPage() {
+        return view('pages.footer-pages.music-cloud');
+    }
+    public function behancePage() {
+        return view('pages.behancePage');
     }
 }
