@@ -23,6 +23,7 @@
                         <li><a class="dropdown-item" href="#">Event and News</a></li>
                     </ul>
                 </li>
+                <li class="nav-item"><a href="#" class="nav-link">Learn</a></li>
                 <li class="nav-item"><a href="{{route('about')}}" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="{{route('blogs')}}" class="nav-link">Blogs</a></li>
                 <li class="nav-item dropdown dropdown-li-projects">

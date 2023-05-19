@@ -169,7 +169,10 @@ footer .info a {
 footer small {
     color: var(--p-color);
 }
-/*  */
+footer .info h4 {
+    text-transform: uppercase;
+}
+/* project page */
 .projects {
     display: flex;
     flex-wrap: wrap;

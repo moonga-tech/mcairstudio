@@ -7,9 +7,10 @@ use App\Models\CreateBlog;
 use App\Models\ContactInfo;
 use App\Models\User;
 
+/* ** ** ** */
+
 class AppController extends Controller
 {
-    
     
     /* -- viewing pages -- */
     public function services()
@@ -54,7 +55,9 @@ class AppController extends Controller
         return view('pages.privacy-policy');
     }
     public function termsAndConditions() {
-        return view('pages.terms-conditions');
+        $companyName = "Mcair-Studio-Tech";
+
+        return view('pages.terms-conditions',['companyName' => $companyName]);
     }
     public function test() {
         return view('pages.test');

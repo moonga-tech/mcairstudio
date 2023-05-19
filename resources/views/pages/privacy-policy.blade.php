@@ -9,8 +9,8 @@
         This Privacy Policy sets out our data processing practices and your options 
         regarding the ways in which your personal data is used. </h4>
     <p>If you have any requests concerning your personal information or any 
-        queries with regard to these practices please contact us at <a href="{{route('contact')}}">this offical website</a>
-    or <a href="https://chat.whatsapp.com/HxsMG3XmzxlG4EJdGZ6SGb" target="_blank">WhatsApp - +260972273828</a>
+        queries with regard to these practices please contact us at <a href="{{url('/')}}">this offical website</a>
+    or <a href="{{route('contact')}}" target="_blank">contact us</a>
     </p>
 
     <h1 class="text-center">Information Collection</h1>

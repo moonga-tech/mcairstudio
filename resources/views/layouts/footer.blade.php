@@ -23,13 +23,25 @@
                 <li>
                     <a href="{{route('privacyPolicy')}}">Privacy Policy</a>
                 </li>
+                <li class="nav-item"><a href="{{route('about')}}">About us</a></li>
             </ul>
         </div>
         <div>
-            <h4>More Information</h4>
+            <h4>Walkthrough</h4>
             <ul>
-                <li class="nav-item"><a href="">contact us</a></li>
-                <li class="nav-item"><a href="">about us</a></li>
+                <li class="nav-item"><a href="">ReactJs</a></li>
+                <li class="nav-item"><a href="">PHP</a></li>
+                <li class="nav-item"><a href="">HTML and CSS</a></li>
+                <li class="nav-item"><a href="">C</a></li>
+                <li class="nav-item"><a href="">C++</a></li>
+                <li class="nav-item"><a href="">JavaScript</a></li>
+            </ul>
+        </div> 
+        <div>
+            <h4>Information</h4>
+            <ul>
+                <li class="nav-item"><a href="#">Pricing</a></li>
+                <li class="nav-item"><a href="{{route('contact')}}">Contact us</a></li>
             </ul>
         </div>        
     </div>

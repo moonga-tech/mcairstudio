@@ -18,6 +18,9 @@ use App\Http\Controllers\AdminController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get("sitemap.xml", function () {
+return \Illuminate\Support\Facades\Redirect::to('sitemap.xml');
+});
 
 Route::get('/', function () {
     return view('welcome');
