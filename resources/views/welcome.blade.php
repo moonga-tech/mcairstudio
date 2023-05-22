@@ -77,7 +77,7 @@
     </div>
     <div style="margin:2em;">
         <a href="{{route('services')}}">
-            <button class="btn btn-md mr-2 btn-danger" style="width: clamp(6em,16vw,16em);">View More</button>
+            <button class="btn btn-md mr-2 btn-danger" style="width: clamp(10em,18vw,16em);">View More</button>
         </a>
     </div>
     <div>
@@ -94,7 +94,7 @@
             <h6>The idea of surfing through popular technologies, open new heights to what you need.</h6>
         <br>
         <a href="{{route('projects')}}">
-            <button type="button" class="btn btn-outline-danger w-lg rounded" style="width: clamp(6em,16vw,16em);">Projects</button>
+            <button type="button" class="btn btn-outline-danger w-lg rounded" style="width: clamp(10em,16vw,16em);">Projects</button>
         </a>
     </div>
 </article>

@@ -15,6 +15,7 @@ body,html {
     box-sizing: border-box;
     font-size: 17px;
 }
+/* ** ** */
 main hr {
     border: 1px solid var(--s-color);
 }
@@ -31,6 +32,16 @@ h1,h2,h3,h4,h5,h6,p,small,.dropdown-item,label {
     width: 100%;
     font-weight: bold;
 }
+.collapse ul {
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.top-nav .nav-link {
+    transition: all ease-in-out 1s;
+}
+.top-nav .nav-link:hover {
+    border-bottom: 1px solid #F26659;
+}
 .dropdown-item {
     font-weight: bold;
 }
@@ -40,6 +51,7 @@ h1,h2,h3,h4,h5,h6,p,small,.dropdown-item,label {
 .top-nav li, .auth-nav li {
     margin: 0 auto;
 }
+
 main {
     margin: 5em 0 0 0;
 }
@@ -147,14 +159,24 @@ footer {
 }
 footer .info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 footer .info a {
     text-decoration: none;
     text-transform: capitalize;
 }
-
+footer small {
+    color: var(--p-color);
+}
+footer .info h4 {
+    text-transform: uppercase;
+}
+footer .info div {
+    max-width: 100%;
+    padding: 1em;
+    margin: 1em;
+}
 .social img{
     width: 28px;
     transition: all 0.5s linear;
@@ -166,12 +188,7 @@ footer .info a {
     text-decoration: none;
 }
 /* ----- footer ----- */
-footer small {
-    color: var(--p-color);
-}
-footer .info h4 {
-    text-transform: uppercase;
-}
+
 /* project page */
 .projects {
     display: flex;
@@ -221,15 +238,21 @@ footer .info h4 {
     }
 }
 @media screen and (max-width: 590px) {
+    .login-btn {
+        margin-top: 2em;
+    }
     .banner {
         text-align: center;
-        background-blend-mode: multiply;
-        background-color: rgb(233, 233, 233);
+        background-position-x: -10em;
+        background-position-y: 15em;
+        background-repeat: repeat-x;
     }
     .banner p {
         max-width: 100%;
-        color: var(--p-color);
-        text-shadow: 1px 2px 1px black;
+        
+    }
+    .count-wrapper {
+        display: none;
     }
 }
 /* -- ** music-course ** -- */
@@ -251,7 +274,7 @@ footer .info h4 {
 .map-responsive iframe{
     left:0;
     top:0;
-    height:80%;
+    min-height:80%;
     width:100%;
-    position:absolute;
+    position:relative;
 }

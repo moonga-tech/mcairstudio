@@ -19,6 +19,36 @@
         Our team of experts work tirelessly to provide high quality content to our clients and make desired user-friendly systems.
         </p>
 
+        <div class="ceo-box">
+            <div class="card shadow text-center" style="width: 16rem;">
+                <a href="https://bit.ly/3MDqrKj">
+                    <img src="asset/images/other/moonga.png" width="200px" alt="mcair" class="rounded-circle img-fluid" style="background-color:white;">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title text-center font-weight-bold">Moonga Manongo</h4>
+                    <small>mcairstudiotech.art</small>
+                </div>
+            </div>
+            <div class="card shadow text-center" style="width: 16rem;">
+                <a href="https://bit.ly/3BEKUbw">
+                    <img src="asset/images/other/mudimba.jpg" width="200px" alt="mcair" class="rounded-circle img-fluid" style="background-color:white;">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title text-center font-weight-bold">Alex Mudimba Moonde</h4>
+                    <small>mudimbasoftware company</small>
+                </div>
+            </div>
+            <div class="card shadow text-center" style="width: 16rem;">
+                <a href="https://bit.ly/439C6WY">
+                    <img src="asset/images/other/muntanga.jpg" width="200px" alt="mcair" class="rounded-circle img-fluid" style="background-color:white;">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title text-center font-weight-bold text-capitalize">muntanga hatembo</h4>
+                    <small>Hats HD | Quality Everything</small>
+                </div>
+            </div>
+        </div>
+
         <p>With years of experience in the industry and using version controls like
             <span class="color-redd">git and github</span>, 
         we have a deep understanding of the challenges faced by most of the algorithms created and user experience platforms, and we are committed in delivering solutions that meet their unique desired needs. Our goal is to help our clients accomplish the best out of it, such as improve their operations, save time and money.</p>

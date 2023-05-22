@@ -1,14 +1,5 @@
 /* import sweetalert from 'sweetalert'; */
 
-$(document).ready(function() {
-    $('.dropdown-li').mouseover(function() {
-        $('.dropdown-menu-services').toggle(200);
-    });
-    $('.dropdown-li-projects').mouseover(() => {
-        $('.dropdown-menu-projects').toggle(300);
-    })
-});
-
 /* modified code typing effect */
 // function([string1, string2],target id,[color1,color2])    
 consoleText(['We Can Create', 'We Can Make', 'We Can Code'], 'text',['#ffaf00','#f26659','#1b69d6']);

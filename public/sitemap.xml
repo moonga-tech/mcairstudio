@@ -9,42 +9,62 @@
 
 <url>
   <loc>https://mcairstudiotech.art/</loc>
-  <lastmod>2023-05-01T16:21:32+00:00</lastmod>
+  <lastmod>2023-05-22T19:32:52+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://mcairstudiotech.art/services</loc>
-  <lastmod>2023-05-01T16:21:32+00:00</lastmod>
+  <lastmod>2023-05-22T19:32:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mcairstudiotech.art/about</loc>
-  <lastmod>2023-05-01T16:21:32+00:00</lastmod>
+  <lastmod>2023-05-22T19:32:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mcairstudiotech.art/blogs</loc>
+  <lastmod>2023-05-22T19:32:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mcairstudiotech.art/projects</loc>
-  <lastmod>2023-05-01T16:21:32+00:00</lastmod>
+  <lastmod>2023-05-22T19:32:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mcairstudiotech.art/contact-us</loc>
-  <lastmod>2023-05-01T16:21:32+00:00</lastmod>
+  <lastmod>2023-05-22T19:32:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mcairstudiotech.art/login</loc>
-  <lastmod>2023-05-01T16:21:32+00:00</lastmod>
+  <lastmod>2023-05-22T19:32:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mcairstudiotech.art/register</loc>
-  <lastmod>2023-05-01T16:21:32+00:00</lastmod>
+  <loc>https://mcairstudiotech.art/mcair/github-repo</loc>
+  <lastmod>2023-05-22T19:32:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mcairstudiotech.art/mcair/music-cloud</loc>
+  <lastmod>2023-05-22T19:32:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mcairstudiotech.art/terms-and-conditions</loc>
+  <lastmod>2023-05-22T19:32:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mcairstudiotech.art/privacy-policy</loc>
+  <lastmod>2023-05-22T19:32:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mcairstudiotech.art/password/reset</loc>
-  <lastmod>2023-05-01T16:21:32+00:00</lastmod>
+  <lastmod>2023-05-22T19:32:52+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
