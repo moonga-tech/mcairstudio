@@ -40,7 +40,7 @@
         <div>
             <h4>Information</h4>
             <ul>
-                <li class="nav-item"><a href="#">Pricing</a></li>
+                <li class="nav-item"><a href="{{route('pricingPage')}}">Pricing</a></li>
                 <li class="nav-item"><a href="{{route('contact')}}">Contact us</a></li>
             </ul>
         </div>        
@@ -52,17 +52,17 @@
                 <div class="social-icons">
                     <i>
                         <a href="http://" target="_blank" rel="noopener noreferrer">
-                            <img src="asset/images/icon/f.png" alt="https://bit.ly/43aL7ib" srcset="">
+                            <img src="{{asset('asset/images/icon/f.png')}}" alt="https://bit.ly/43aL7ib" srcset="">
                         </a>
                     </i>
                     <i>
                         <a href="http://" target="_blank" rel="noopener noreferrer">
-                            <img src="asset/images/icon/i.png" alt="" srcset="">
+                            <img src="{{asset('asset/images/icon/i.png')}}" alt="" srcset="">
                         </a>
                     </i>
                     <i>
                         <a href="http://" target="_blank" rel="noopener noreferrer">
-                            <img src="asset/images/icon/y.png" alt="" srcset="">
+                            <img src="{{asset('asset/images/icon/y.png')}}" alt="" srcset="">
                         </a>
                     </i>
                 </div>

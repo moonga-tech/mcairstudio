@@ -14,6 +14,10 @@
 <link rel="stylesheet" href="{{asset('asset/css/admin.css')}}">
 <link rel="stylesheet" href="{{asset('asset/sass/app.scss')}}">
 <!-- <link rel="stylesheet" href="{{asset('asset/css/mcair.css')}}"> -->
+<style>
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700);
+</style>
 
 <!-- Scripts -->
 <script src="{{asset('asset/js/jquery-3.2.1.min.js')}}" defer></script>

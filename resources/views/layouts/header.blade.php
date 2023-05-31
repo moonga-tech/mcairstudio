@@ -51,11 +51,11 @@
                         </li>
                     @endif
 
-                    <!-- @if (Route::has('register'))
+                    @if (Route::has('register'))
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('register') }}"><button class="btn btn-danger">{{ __('Register') }}</button></a>
                         </li>
-                    @endif -->
+                    @endif
                 @else
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -65,7 +65,7 @@
 
                         @if(Auth::user()->name === 'Admin')
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{route('viewBlog')}}">Dashboard</a>
+                            <a class="dropdown-item" href="{{route('admin.home')}}">Dashboard</a>
                             <a class="dropdown-item" href="{{route('course')}}">Music Course</a>
                             <hr class="dropdown-divider">
                             <a class="dropdown-item" href="{{ route('logout') }}"

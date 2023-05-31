@@ -1,4 +1,23 @@
 /* import sweetalert from 'sweetalert'; */
+$('.counting').each(function() {
+  var $this = $(this),
+    countTo = $this.attr('data-count');
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+  {
+    duration: 3000,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+    });  
+});
 
 /* modified code typing effect */
 // function([string1, string2],target id,[color1,color2])    

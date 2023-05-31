@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities; */
 /* #8CA9D3,F26659 */
+
+
 :root {
     --p-color: #F26659;
     --s-color: #3663a1;
@@ -53,7 +55,7 @@ h1,h2,h3,h4,h5,h6,p,small,.dropdown-item,label {
 }
 
 main {
-    margin: 5em 0 0 0;
+    margin: 4em 0 0 0;
 }
 /* clearing-code-duplicates */
 .banner {
@@ -118,9 +120,22 @@ article {
     position: relative;
     bottom: 25px;
 }
+.stats .fa {
+    color: #119494;
+    font-size: 50px;
+    margin-bottom: .3em;
+}
+.stats {
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+.stats .counting {
+    font-size: 15px;
+}
 .count-wrapper div {
-    margin: 1em 3em;
-    padding: 2em 5em;
+    margin: 1em 2em;
+    padding: 2em 3em;
     border-radius: 10px;
     font-size: 10px;
 }
@@ -159,7 +174,8 @@ footer {
 }
 footer .info {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 footer .info a {
@@ -174,7 +190,6 @@ footer .info h4 {
 }
 footer .info div {
     max-width: 100%;
-    padding: 1em;
     margin: 1em;
 }
 .social img{
@@ -208,7 +223,7 @@ footer .info div {
     margin: 1em 0;
 }
 .blogs .card img {
-    width: 16em;
+    width: 12em;
     float:left;
 }
 /* ......... */

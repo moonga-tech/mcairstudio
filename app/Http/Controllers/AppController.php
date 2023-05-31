@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\CreateBlog;
+use App\Models\Blog;
 use App\Models\ContactInfo;
 use App\Models\User;
 
@@ -43,13 +43,13 @@ class AppController extends Controller
     }
     public function blogs() {
         $user = User::all();
-        $data = CreateBlog::all();
-        return view('pages.blog-folder.blogs',['data' => $data, 'user' => $user]);
+        $blogs = Blog::all();
+        return view('pages.blog-folder.blogs',['blogs' => $blogs]);
     }
-    public function blogID($id) {
-        $blogID = CreateBlog::findOrFail($id);
+    public function blogShow($id) {
+        $blogShow = Blog::findOrFail($id);
 
-        return view('pages.blog-folder.blog-id',['blogID' => $blogID,]);
+        return view('pages.blog-folder.blog-show',['blogShow' => $blogShow,]);
     }
     public function privacyPolicy() {
         return view('pages.privacy-policy');
@@ -58,6 +58,9 @@ class AppController extends Controller
         $companyName = "Mcair-Studio-Tech";
 
         return view('pages.terms-conditions',['companyName' => $companyName]);
+    }
+    public function pricingPage() {
+        return view('pages.pricing');
     }
     public function test() {
         return view('pages.test');

@@ -1,18 +1,25 @@
 .admin-main {
     display: flex;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
 }
 .left-side {
-    height: 100vh;
-    width: 10em;
+    width: 15%;
+    height: auto;
+}
+.left-side div {
+    margin: 0 auto;
 }
 .left-side button {
     margin: 1em auto;
+    width:clamp(10em,10vw,18em);
 }
 .inner-wrapper {
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
-.admin-main main {
+.admin-main .right-side {
     padding: 0 1em;
+    width: 100%;
 }

@@ -28,9 +28,9 @@ class TestUserSeeder extends Seeder
             ],
             [
                'name'=>'Admin',
-               'email'=>'admin@cambotutorial.com',
+               'email'=>'admin@mcair.com',
                'role'=> 2,
-               'password'=> bcrypt('123456'),
+               'password'=> bcrypt('123'),
             ],
             
         ];

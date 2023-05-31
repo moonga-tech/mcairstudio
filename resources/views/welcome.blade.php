@@ -8,24 +8,33 @@
     <div class="container banner-content">
         <div>
             <h1 class="text-capitalize">mcair studios and tech</h1>
-            <small><h5 class="text-capitalize">the future is technology</h5></small>
+            <small><h5 class="text-capitalize">Creative Innovator</h5></small>
         </div>
         <p class="text-capitalize">
+            industry-leading studio at the forefront of aerial photography and videography. With a passion for capturing the world from unique perspectives, our skilled team of professionals combines cutting-edge technology and artistic vision to deliver awe-inspiring results. From stunning landscapes to high-octane action shots, we specialize in creating breathtaking visuals that leave a lasting impact. With an unwavering commitment to quality and innovation, MC AirStudioTech brings your creative vision to new heights, unlocking the limitless possibilities of the sky. Trust us to bring your projects to life with unparalleled expertise and a passion for pushing boundaries.
+
             " the creation of content to your desired expectation.
             The future of graphical design, music production and compute Programming
             is in your hands, with the help of AI ".
         </p>
+        <button>M</button>
     </div>
 </div>
-<div class="count-wrapper container">
-    <div class="shadow">
-        <h1>4567</h1>
+<div class="count-wrapper container" id="counter-stats">
+    <div class="shadow stats">
+        <i class="fa fa-code" aria-hidden="true"></i>
+        <p class="counting" data-count="104590">0</p>
+        <h5>Lines of code</h5>
     </div>
-    <div class="shadow">
-        <h1>7654</h1>
+    <div class="shadow stats">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        <p class="counting" data-count="180">0</p>
+        <h5>Projects done</h5>
     </div>
-    <div class="shadow">
-        <h1>4567</h1>
+    <div class="shadow stats">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <p class="counting" data-count="20">0</p>
+        <h5>Happy clients</h5>
     </div>
 </div>
 <section class="text-center service-card-div">
@@ -40,11 +49,11 @@
                 <img src="asset/images/code.jpg" class="card-img-top img-fluid" alt="...">
             </a>
             <div class="card-body">
-                    <i class="fa-light fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>                
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>                
                     <h4 class="card-title text-center font-weight-bold">Computer Programming</h4>
             </div>
         </div>
@@ -53,11 +62,11 @@
                 <img src="asset/images/art.jpg" class="card-img-top img-fluid" alt="...">
             </a>
             <div class="card-body">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
                 <h4 class="card-title text-center font-weight-bold">Graphical Design</h4>
             </div>
         </div>
@@ -66,11 +75,11 @@
                 <img src="asset/images/music.jpg" class="card-img-top img-fluid" alt="...">
             </a>
             <div class="card-body">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
                 <h4 class="card-title text-center font-weight-bold">Music Production</h4>
             </div>
         </div>
