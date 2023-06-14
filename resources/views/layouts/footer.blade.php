@@ -29,7 +29,7 @@
         <div>
             <h4>Walkthrough</h4>
             <ul>
-                <li class="nav-item"><a href="">ReactJs</a></li>
+                <li class="nav-item"><a href="{{route('code.reactjs')}}">ReactJs</a></li>
                 <li class="nav-item"><a href="">PHP</a></li>
                 <li class="nav-item"><a href="">HTML and CSS</a></li>
                 <li class="nav-item"><a href="">C</a></li>

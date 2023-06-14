@@ -25,7 +25,7 @@
             </div>
         </div>
     </div> -->
-        <textarea name="editor" id="editor">
+        <textarea name="blog_body" id="editor">
             Type your blog content here!
         </textarea>
         <div class="div-wrapper">

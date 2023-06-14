@@ -46,7 +46,8 @@ Route::controller(AppController::class)->group(function() {
     Route::get('/mcair/github-repo', [AppController::class, 'githubRepo'])->name('githubRepo');
     Route::get('/mcair/music-cloud', [AppController::class, 'musicCloudPage'])->name('musicCloudPage');
     Route::get('/behance-content', [AppController::class, 'behancePage'])->name('behancePage');
-    Route::get('/mcair-studio-tech/services/prices', [AppController::class, 'pricingPage'])->name('pricingPage');
+    Route::get('/services/prices', [AppController::class, 'pricingPage'])->name('pricingPage');
+    Route::get('/code/reactjs', [AppController::class, 'codeReactjs'])->name('code.reactjs');
 
     /* -- music-class -- */
     Route::controller(AppController::class)->group(function() {
@@ -71,10 +72,10 @@ Route::middleware(['auth','user-role:admin'])->group(function()
     Route::post("/admin/home",[AdminController::class, 'adminCreateBlog']);
     Route::get("/admin/view-blog",[AdminController::class, 'viewBlog'])->name("viewBlog");
     Route::get('/admin/update-blog/{id}', [AdminController::class, 'updateBlog'])->name('updateBlog');
-    Route::put('/admin/update-blog/{id}', [CreateBlogController::class, 'updateBlogContent']);
-    Route::put('/admin/messages', [AdminController::class, 'contactInfo']);
+    Route::put('/admin/update-blog/{id}', [AdminController::class, 'updateBlogContent']);
+    Route::get('/admin/messages', [AdminController::class, 'messages'])->name('messages');
 });
 
-Auth::routes(['register' => false]);
+Auth::routes();
 
 /* Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home'); */

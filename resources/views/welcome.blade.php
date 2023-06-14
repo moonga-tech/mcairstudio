@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('page-title', 'Home Page')
 @section('meta_keywords','Home-Page, Sections, Mcair Studio and Tech')
-@section('meta_description', 'https://mcairstudiotech.art, this is our home page where you can view all relevant content on our website.')
+@section('meta_description', 'https://mcairstudiotech.art, we specialize in creating breathtaking visuals that leave a lasting impact. With an unwavering commitment to quality and innovation, McairStudioTech brings your creative vision to new heights, unlocking the limitless possibilities')
 
 @section('content')
 <div class="banner shadow">
@@ -10,14 +10,10 @@
             <h1 class="text-capitalize">mcair studios and tech</h1>
             <small><h5 class="text-capitalize">Creative Innovator</h5></small>
         </div>
-        <p class="text-capitalize">
-            industry-leading studio at the forefront of aerial photography and videography. With a passion for capturing the world from unique perspectives, our skilled team of professionals combines cutting-edge technology and artistic vision to deliver awe-inspiring results. From stunning landscapes to high-octane action shots, we specialize in creating breathtaking visuals that leave a lasting impact. With an unwavering commitment to quality and innovation, MC AirStudioTech brings your creative vision to new heights, unlocking the limitless possibilities of the sky. Trust us to bring your projects to life with unparalleled expertise and a passion for pushing boundaries.
-
-            " the creation of content to your desired expectation.
-            The future of graphical design, music production and compute Programming
-            is in your hands, with the help of AI ".
+        <p class="text-capitalize text-description text-secondary">
+            Industry-leading studio at the forefront of aerial studio production for Music, Technology and Art Design. <!-- With a passion of influence the world from unique perspectives, our talented team of quality professionals combines cutting-edge technology and artistic vision to deliver awe-inspiring results. From stunning landscapes to high-octane action shots, --> we specialize in creating breathtaking visuals that leave a lasting impact. With an unwavering commitment to quality and innovation, McairStudioTech brings your creative vision to new heights, unlocking the limitless possibilities. Trust us to bring your projects to life with unparalleled expertise and a passion for pushing boundaries.
         </p>
-        <button>M</button>
+        <a href="{{route('contact')}}"><button class="btn btn-outline-danger shadow mr-2" style="width: 10em;">Get in touch</button></a>
     </div>
 </div>
 <div class="count-wrapper container" id="counter-stats">

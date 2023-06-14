@@ -13,17 +13,16 @@
                     <input id="name" type="text" class="form-control" name="blog_title" required autocomplete="name" autofocus placeholder="Blog title" value="{{$fetchBlog->blog_title}}">
                 </div>
             </div>
-            <!-- <div class="div-wrapper">
+            <div class="div-wrapper">
                 <div class="row mb-3">
                     <label for="image"><h5>{{ __('Blog Image') }}</h5></label>
 
                     <div class="col-md-6">
-                        <input id="name" type="file" class="form-control" name="image" required autocomplete="name" autofocus placeholder="Image">
+                        <input id="name" type="file" class="form-control" value="$fetchBlog->blog_image" name="blog_image" autocomplete="name" autofocus placeholder="Image">
                     </div>
                 </div>
-            </div> -->
-            <textarea name="editor" id="editor" value="{!!$fetchBlog->editor!!}">
-
+            </div>
+            <textarea name="blog_body" id="editor" value="{!!$fetchBlog->blog_body!!}">
             </textarea>
 
             <div class="div-wrapper">

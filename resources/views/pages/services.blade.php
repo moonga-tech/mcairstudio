@@ -1,44 +1,52 @@
 @extends('layouts.app')
 @section('page-title', 'Mcair Studio | Services')
+@section('meta_keywords','pricing, service, duties, coding, music production')
+@section('meta_description', 'https://mcairstudiotech.art/services, checkout our services')
 @section('content')
 <div class="services">
-<div class="text-center">
-    <h1>Our Services for Our Clients</h1>
-    <div style="">
-        <hr style="width: 20%; margin: 0 auto;">
-    </div>
-</div>
+
 <section class="text-center service-card-div">
-    <br>
     <h1>Services</h1>
     <div class="service-card container">
-        <a href="">
-            <div class="card shadow" style="width: 22rem;">
-            <a href="">
-                <img src="asset/images/coding.jpg" class="card-img-top img-fluid" alt="...">
-            </a>
-            <div class="card-body">
+        <div class="card shadow" style="width: 19rem;">
+            <div class="card-header">
+                <img src="asset/images/code.jpg" class="card-img-top img-fluid" alt="...">
                 <h4 class="card-title text-center font-weight-bold">Computer Programming</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alias.</p>
+            </div>
+
+            <div class="card-body">
+                <p>Skills: <span class="text-secondary">Programming Languages</span></p>
+                <p>PHP, Python, ReactJs and React-Native, JavaScript, C/C++, Java</p>
+            </div>
+
+            <div class="card-footer">
+                <button class="btn btn-secondary btn-md mr-2 w-10">Pricing</button>
             </div>
         </div>
-        </a>
-        <div class="card shadow" style="width: 22rem;">
-            <a href="">
-                <img src="asset/images/web.jpg" class="card-img-top img-fluid" alt="...">
-            </a>
-            <div class="card-body">
+        <div class="card shadow" style="width: 19rem;">
+            <div class="card-header">
+                <img src="asset/images/art.jpg" class="card-img-top img-fluid" alt="...">
                 <h4 class="card-title text-center font-weight-bold">Graphical Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alias.</p>
+            </div>
+            <div class="card-body">
+                <p>Skills: <span class="text-secondary">Computer Graphics</span></p>
+                <p>Photoshop, Illustrator, Cinema 4D, After Effects, Corel-Draw</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-secondary btn-md mr-2 w-10">Pricing</button>
             </div>
         </div>
-        <div class="card shadow" style="width: 22rem;">
-            <a href="">
+        <div class="card shadow" style="width: 19rem;">
+            <div class="card-header">
                 <img src="asset/images/music.jpg" class="card-img-top img-fluid" alt="...">
-            </a>
-            <div class="card-body">
                 <h4 class="card-title text-center font-weight-bold">Music Production</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alias.</p>
+            </div>
+            <div class="card-body">
+                <p>Skiils: <span class="text-secondary">Music Engineering</span></p>
+                <p>FL Studio, Cubase, Adobe Audition</p>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-secondary btn-md mr-2 w-10">Pricing</button>
             </div>
         </div>
     </div>

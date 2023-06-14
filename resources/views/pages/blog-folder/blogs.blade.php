@@ -22,7 +22,7 @@
                 </a>
                 <div class="card-body">
                     <section>{!! $blogs->blog_body !!}</section>
-                    <a href="/blogs/{{$blogs->id}}">
+                    <a href="{{ route('blogShow', $blogs->id, $blogs->title) }}">
                         <button type="button" class="btn btn-secondary mr-2 btn-md">View More</button>
                     </a>
                 </div>

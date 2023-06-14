@@ -108,9 +108,10 @@ article {
     letter-spacing: 5px;
     font-weight: bold;
 }
-.banner p {
+.text-description {
     max-width: 60%;
     margin: 1em 0;
+    font-weight: 500;
 }
 .count-wrapper {
     display: flex;
@@ -134,7 +135,7 @@ article {
     font-size: 15px;
 }
 .count-wrapper div {
-    margin: 1em 2em;
+    margin: 1em 4em;
     padding: 2em 3em;
     border-radius: 10px;
     font-size: 10px;

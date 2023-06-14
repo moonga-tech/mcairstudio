@@ -20,36 +20,48 @@
         </p>
 
         <div class="ceo-box">
-            <div class="card shadow text-center" style="width: 16rem;">
-                <a href="https://bit.ly/3MDqrKj">
+            <div class="card shadow text-center" style="width: 19rem;">
+                <!-- <a href="https://bit.ly/3MDqrKj"> -->
+                <div>
                     <img src="asset/images/other/moonga.png" width="200px" alt="mcair" class="rounded-circle img-fluid" style="background-color:white;">
-                </a>
+                </div>
                 <div class="card-body">
                     <h4 class="card-title text-center font-weight-bold">Moonga Manongo</h4>
-                    <small>mcairstudiotech.art</small>
+                    <h5>CEO:<a href="https://mcairstudiotech.art" class="text-decoration-none">mcairstudiotech.art</a></h5>
+                </div>
+                <div class="card-footer">
+                    <p>Computer Programmer</p>
                 </div>
             </div>
-            <div class="card shadow text-center" style="width: 16rem;">
-                <a href="https://bit.ly/3BEKUbw">
+            <div class="card shadow text-center" style="width: 19rem;">
+                <!-- <a href="https://bit.ly/3BEKUbw"> -->
+                <div>
                     <img src="asset/images/other/mudimba.jpg" width="200px" alt="mcair" class="rounded-circle img-fluid" style="background-color:white;">
-                </a>
+                </div>
                 <div class="card-body">
                     <h4 class="card-title text-center font-weight-bold">Alex Mudimba Moonde</h4>
                     <small>mudimbasoftware company</small>
                 </div>
+                <div class="card-footer">
+                    <p>Software Developer</p>
+                </div>
             </div>
-            <div class="card shadow text-center" style="width: 16rem;">
-                <a href="https://bit.ly/439C6WY">
+            <div class="card shadow text-center" style="width: 19rem;">
+                <!-- <a href="https://bit.ly/439C6WY"> -->
+                <div>
                     <img src="asset/images/other/muntanga.jpg" width="200px" alt="mcair" class="rounded-circle img-fluid" style="background-color:white;">
-                </a>
+                </div>
                 <div class="card-body">
                     <h4 class="card-title text-center font-weight-bold text-capitalize">muntanga hatembo</h4>
                     <small>Hats HD | Quality Everything</small>
                 </div>
+                <div class="card-footer">
+                    <p>Digital Creator</p>
+                </div>
             </div>
         </div>
 
-        <p>With years of experience in the industry and using version controls like
+        <p>With years of experience in the industry and using version control like
             <span class="color-redd">git and github</span>, 
         we have a deep understanding of the challenges faced by most of the algorithms created and user experience platforms, and we are committed in delivering solutions that meet their unique desired needs. Our goal is to help our clients accomplish the best out of it, such as improve their operations, save time and money.</p>
 

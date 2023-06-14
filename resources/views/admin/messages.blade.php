@@ -8,6 +8,7 @@
             <tr>
                 <th scope="col">Full Name</th>
                 <th scope="col">Email</th>
+                <th scope="col">Messages</th>
                 <th scope="col">Actions</th>
             </tr>
         </thead>
@@ -15,7 +16,7 @@
         @foreach($messages as $messages)
         <tr>
             <td>{{$messages->contact_name}}</td>
-            <td>{{$messages->contact_email}}</td>
+            <td minwidth="9">{{$messages->contact_email}}</td>
             <td>{!!$messages->message!!}</td>
             <td>
                 <a href="/admin/{{$messages->id}}" class="text-decoration-none">

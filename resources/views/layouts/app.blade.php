@@ -3,15 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    
     <!-- SEO -->
     <meta name="keywords" content="@yield('meta_keywords')">
     <meta name="description" content="@yield('meta_description')">
     <link rel="canonical" href="{{url()->current()}}"/>
-    
+    <!-- SEO -->
     <!-- Google Details -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3075971117498364" crossorigin="anonymous"></script>
     <meta name="google-site-verification" content="URfhmUqUqaOtCuPZgGyftQRsH_PwKE73mU2hrPC3tnc" />
@@ -21,10 +19,7 @@
 
     <!-- AOS -->
     <link rel="stylesheet" href="{{asset('asset/styles.css')}}">
-    
-    
     @include('layouts.links')
-
 </head>
 <body>
     <div id="app">
@@ -34,17 +29,5 @@
         </main>
         @include('layouts.footer')
     </div>
-        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
-        <script>
-        requirejs.config({
-            baseUrl: '../dist',
-        });
-
-        require(['aos'], function(AOS){
-            AOS.init({
-                easing: 'ease-in-out-sine'
-            });
-        });
-        </script> -->
 </body>
 </html>

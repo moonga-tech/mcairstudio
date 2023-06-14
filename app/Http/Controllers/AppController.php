@@ -35,7 +35,7 @@ class AppController extends Controller
         $data->message = request('message');
         $data->save();
 
-        return redirect()->back()->with('msg', 'Message Sent');
+        return redirect()->back()->with('msg', 'Message Sent, Thank You');
     }
     public function projects()
     {
@@ -76,5 +76,8 @@ class AppController extends Controller
     }
     public function behancePage() {
         return view('pages.behancePage');
+    }
+    public function codeReactjs() {
+        return view('pages.code.reactjs');
     }
 }

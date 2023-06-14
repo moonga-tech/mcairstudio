@@ -50,11 +50,8 @@
     </form>
 </div>
 <div class="container text-center">
-    <h4>
-        <strong>Contact: ### [ +260963689370 ]</strong>
-        <br>
-        <small><em>Email:</em> manongomoonga@gmail.com</small>
-    </h4>
+    <h4><strong>Contact: </strong>+260963689370</h4>
+    <h4><strong>Email: </strong><a href="https://mail.google.com/mail/?view=cm&fs=1&to=manongomoonga@gmail.com" target="_blank">manongomoonga@gmail.com</a></h4>
 </div>
 
 <script>

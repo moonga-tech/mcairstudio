@@ -9,8 +9,8 @@
 
                 <div class="card-body">
                     <ul>
-                        <li><a href="{{route('course')}}">Course - (Music-Class)</a></li>
-                        <li><a href="{{route('createBlog')}}">Create a blog</a></li>
+                        <li><a href="{{route('course')}}" class="nav-link">Course - (Music-Class)</a></li>
+                        <li><a href="{{route('createBlog')}}" class="nav-link">Create a blog</a></li>
                     </ul>
                 </div>
             </div>

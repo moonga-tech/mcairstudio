@@ -1,1 +1,11 @@
 google.com, pub-3075971117498364, DIRECT, f08c47fec0942fa0
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BZG21TYNHH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BZG21TYNHH');
+</script>

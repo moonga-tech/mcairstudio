@@ -31,8 +31,8 @@ class BlogController extends Controller
         $data = new Blog;
 
         $data->blog_title = request('blog_title');
-        $data->image = $fileImage;
-        $data->editor = request('editor');
+        /* $data->blog_image = request('blog_image'); */
+        $data->blog_body = request('blog_body');
         $data->save();
 
         return redirect()->back()->with("msg", "blog posted successfully");

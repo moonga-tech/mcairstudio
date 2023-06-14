@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Blog;
+use App\Models\ContactInfo;
 
 class AdminController extends Controller
 {
@@ -39,7 +40,19 @@ class AdminController extends Controller
 
         return view('admin.update-blog', ['fetchBlog' => $fetchBlog]);
     }
-    public function contactInfo() {
-        return view('admin.messages');
+    /* ** -- update blogs ** */
+    public function updateBlogContent($id) {
+        $updateBlogContent = Blog::find($id);
+
+        $updateBlogContent->blog_title = request('blog_title');
+        $updateBlogContent->blog_image = request('blog_image');
+        $updateBlogContent->blog_body = request('blog_body');
+        $updateBlogContent->update();
+
+        return redirect()->back();
+    }
+    public function messages() {
+        $messages = ContactInfo::all();
+        return view('admin.messages',['messages' => $messages]);
     }
 }

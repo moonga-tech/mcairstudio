@@ -21,7 +21,7 @@
                 </a>
             </div>
             <div>
-                <a href="#">
+                <a href="{{route('messages')}}">
                     <button class="btn btn-outline-light">Messages</button>
                 </a>
             </div>
