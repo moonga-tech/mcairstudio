@@ -30,11 +30,11 @@
             <h4>Walkthrough</h4>
             <ul>
                 <li class="nav-item"><a href="{{route('code.reactjs')}}">ReactJs</a></li>
-                <li class="nav-item"><a href="">PHP</a></li>
-                <li class="nav-item"><a href="">HTML and CSS</a></li>
-                <li class="nav-item"><a href="">C</a></li>
-                <li class="nav-item"><a href="">C++</a></li>
-                <li class="nav-item"><a href="">JavaScript</a></li>
+                <li class="nav-item"><a href="{{route('code.php')}}">PHP</a></li>
+                <li class="nav-item"><a href="{{route('code.htmlcss')}}">HTML and CSS</a></li>
+                <li class="nav-item"><a href="{{route('code.c')}}">C</a></li>
+                <li class="nav-item"><a href="{{route('code.cpp')}}">C++</a></li>
+                <li class="nav-item"><a href="{{route('code.javascript')}}">JavaScript</a></li>
             </ul>
         </div> 
         <div>

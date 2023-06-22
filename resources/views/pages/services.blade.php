@@ -1,10 +1,9 @@
 @extends('layouts.app')
-@section('page-title', 'Mcair Studio | Services')
-@section('meta_keywords','pricing, service, duties, coding, music production')
-@section('meta_description', 'https://mcairstudiotech.art/services, checkout our services')
+@section('page-title', 'Services')
+@section('meta_keywords','pricing, service, duties, coding, music production, computer programming, computer languages, graphical design')
+@section('meta_description', 'https://mcairstudiotech.art/services, services and skills provided to ensure our clients find it comfortable')
 @section('content')
 <div class="services">
-
 <section class="text-center service-card-div">
     <h1>Services</h1>
     <div class="service-card container">
@@ -20,7 +19,7 @@
             </div>
 
             <div class="card-footer">
-                <button class="btn btn-secondary btn-md mr-2 w-10">Pricing</button>
+                <button class="btn btn-secondary px-5">Pricing</button>
             </div>
         </div>
         <div class="card shadow" style="width: 19rem;">
@@ -33,7 +32,7 @@
                 <p>Photoshop, Illustrator, Cinema 4D, After Effects, Corel-Draw</p>
             </div>
             <div class="card-footer">
-                <button class="btn btn-secondary btn-md mr-2 w-10">Pricing</button>
+                <button class="btn btn-secondary btn-md px-5">Pricing</button>
             </div>
         </div>
         <div class="card shadow" style="width: 19rem;">
@@ -46,7 +45,7 @@
                 <p>FL Studio, Cubase, Adobe Audition</p>
             </div>
             <div class="card-footer">
-                <button class="btn btn-secondary btn-md mr-2 w-10">Pricing</button>
+                <button class="btn btn-secondary btn-md px-5">Pricing</button>
             </div>
         </div>
     </div>

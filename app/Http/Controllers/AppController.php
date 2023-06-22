@@ -17,6 +17,9 @@ class AppController extends Controller
     {
         return view("pages.services");
     }
+    public function learn() {
+        return view('pages.learn');
+    }
     public function about()
     {
         $companyName = 'Mcair-Studio-Tech';
@@ -37,8 +40,7 @@ class AppController extends Controller
 
         return redirect()->back()->with('msg', 'Message Sent, Thank You');
     }
-    public function projects()
-    {
+    public function projects() {
         return view('pages.projects');
     }
     public function blogs() {
@@ -61,9 +63,6 @@ class AppController extends Controller
     }
     public function pricingPage() {
         return view('pages.pricing');
-    }
-    public function test() {
-        return view('pages.test');
     }
     /* 
     ****** footer pages *******

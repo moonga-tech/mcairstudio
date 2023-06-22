@@ -15,22 +15,22 @@ class TestUserSeeder extends Seeder
     {
         $users = [
             [
-               'name'=>'User',
-               'email'=>'user@cambotutorial.com',
+               'name'=>'Nkosizani',
+               'email'=>'nkosizani@mcair.com',
                'role'=> 0,
-               'password'=> bcrypt('123456'),
+               'password'=> bcrypt('nkosizani123456'),
             ],
             [
                'name'=>'Editor',
-               'email'=>'editor@cambotutorial.com',
+               'email'=>'editor@mcair.com',
                'role'=> 1,
                'password'=> bcrypt('123456'),
             ],
             [
-               'name'=>'Admin',
+               'name'=>'MasterAdmin',
                'email'=>'admin@mcair.com',
                'role'=> 2,
-               'password'=> bcrypt('123'),
+               'password'=> bcrypt('admin123456'),
             ],
             
         ];

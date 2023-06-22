@@ -23,7 +23,7 @@
                         <li><a class="dropdown-item" href="#">Event and News</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a href="#" class="nav-link">Learn</a></li>
+                <li class="nav-item"><a href="{{route('learn')}}" class="nav-link">Learn</a></li>
                 <li class="nav-item"><a href="{{route('about')}}" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="{{route('blogs')}}" class="nav-link">Blogs</a></li>
                 <li class="nav-item dropdown dropdown-li-projects">
@@ -78,9 +78,9 @@
                         </div>
                         @endif
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{route('home')}}">Auth-Home</a>
-                            <a class="dropdown-item" href="{{route('course')}}">Music Course</a>
-                            <a class="dropdown-item" href="{{route('createBlog')}}">Music Course</a>
+                            <a class="dropdown-item" href="{{route('home')}}">Home</a>
+                            <a class="dropdown-item" href="">Profile</a>
+                            <a class="dropdown-item" href="{{route('createBlog')}}">Create Blog</a>
                             <hr class="dropdown-divider">
                             <a class="dropdown-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault();

@@ -12,14 +12,14 @@ class BlogController extends Controller
     }
     public function postBlog(Request $request) {        
         
-        $request->validate([
+        /* $request->validate([
             'image' => 'required|image|mimes:png,jpg,jpeg|max:2048'
         ]);
 
-        $fileImage = time().'.'.$request->image->extension();
+        $fileImage = time().'.'.$request->image->extension(); */
 
         // Public Folder
-        $request->image->move(public_path('blog-images'), $fileImage);
+        //$request->image->move(public_path('blog-images'), $fileImage);
 
         // //Store in Storage Folder
         //$request->image->storeAs('public/images', $fileImage);
@@ -31,7 +31,7 @@ class BlogController extends Controller
         $data = new Blog;
 
         $data->blog_title = request('blog_title');
-        /* $data->blog_image = request('blog_image'); */
+        $data->blog_image = request('blog_image');
         $data->blog_body = request('blog_body');
         $data->save();
 

@@ -11,7 +11,6 @@
         </div>        
 
         @foreach($blogs as $blogs)
-        {{$blogs->id}}
         <div class="card shadow text-center" style="width: 45%;">
             <div class="card-header">
                 <h3 class="card-title font-weight-bold">{{$blogs->blog_title}}</h3>

@@ -16,15 +16,15 @@
             <input id="name" type="text" class="form-control" name="blog_title" required autocomplete="name" autofocus placeholder="Blog title">
         </div>
     </div>
-    <!-- <div class="div-wrapper">
+    <div class="div-wrapper">
         <div class="row mb-3">
             <label for="image"><h5>{{ __('Blog Image') }}</h5></label>
 
             <div class="col-md-6">
-                <input id="name" type="file" class="form-control" name="image" required autocomplete="name" autofocus placeholder="Image">
+                <input id="name" type="file" class="form-control" name="blog_image" required autocomplete="name" autofocus placeholder="Image">
             </div>
         </div>
-    </div> -->
+    </div>
         <textarea name="blog_body" id="editor">
             Type your blog content here!
         </textarea>

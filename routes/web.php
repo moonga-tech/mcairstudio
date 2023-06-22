@@ -33,6 +33,7 @@ Route::controller(AppController::class)->group(function() {
 
     /* header pages */
     Route::get('/services', [AppController::class, 'services'])->name('services');
+    Route::get('/learn', [AppController::class, 'learn'])->name('learn');
     Route::get('/about', [AppController::class, 'about'])->name('about');
     Route::get('/contact-us', [AppController::class, 'contact'])->name('contact');
     Route::post('/contact-us', [AppController::class, 'contactPost']);
@@ -48,6 +49,11 @@ Route::controller(AppController::class)->group(function() {
     Route::get('/behance-content', [AppController::class, 'behancePage'])->name('behancePage');
     Route::get('/services/prices', [AppController::class, 'pricingPage'])->name('pricingPage');
     Route::get('/code/reactjs', [AppController::class, 'codeReactjs'])->name('code.reactjs');
+    Route::get('/code/php/laravel', [AppController::class, 'codephp'])->name('code.php');
+    Route::get('/code/html-css', [AppController::class, 'codehtmlcss'])->name('code.htmlcss');
+    Route::get('/code/c-language', [AppController::class, 'codeC'])->name('code.c');
+    Route::get('/code/cpp', [AppController::class, 'codeCpp'])->name('code.cpp');
+    Route::get('/code/javascript', [AppController::class, 'codejavascript'])->name('code.javascript');
 
     /* -- music-class -- */
     Route::controller(AppController::class)->group(function() {
@@ -60,8 +66,7 @@ Route::middleware('auth')->group(function() {
     Route::post('/create-blog', [BlogController::class, 'postBlog']);
 });
 //Route User
-Route::middleware(['auth','user-role:user'])->group(function()
-{
+Route::middleware(['auth','user-role:user'])->group(function() {
     Route::get("/home",[HomeController::class, 'userHome'])->name("home");
 });
 
@@ -76,6 +81,6 @@ Route::middleware(['auth','user-role:admin'])->group(function()
     Route::get('/admin/messages', [AdminController::class, 'messages'])->name('messages');
 });
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 /* Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home'); */
