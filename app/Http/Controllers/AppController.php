@@ -74,7 +74,7 @@ class AppController extends Controller
         return view('pages.footer-pages.music-cloud');
     }
     public function behancePage() {
-        return view('pages.behancePage');
+        return view('pages.footer-pages.behance');
     }
     public function codeReactjs() {
         return view('pages.code.reactjs');

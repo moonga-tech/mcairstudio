@@ -23,6 +23,7 @@
                 </div>
             </div>
             <textarea name="blog_body" id="editor" value="{!!$fetchBlog->blog_body!!}">
+            {!! Request::old('content', $fetchBlog->blog_body) !!}
             </textarea>
 
             <div class="div-wrapper">

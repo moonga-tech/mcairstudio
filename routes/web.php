@@ -81,6 +81,6 @@ Route::middleware(['auth','user-role:admin'])->group(function()
     Route::get('/admin/messages', [AdminController::class, 'messages'])->name('messages');
 });
 
-Auth::routes(['register' => false]);
+Auth::routes();
 
 /* Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home'); */

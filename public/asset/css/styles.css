@@ -219,13 +219,21 @@ footer .info div {
     transition: all 0.5 linear;
     transform: translateX(1.1);
 }
-/*  */
+/* blogs page */
+.blogs {
+    max-width: 50%;
+}
 .blogs .card {
     margin: 1em 0;
 }
 .blogs .card img {
-    width: 12em;
+    max-width: 5em;
     float:left;
+    margin: 2em;
+}
+.blogs .card-body section {
+    overflow-y: hidden;
+    height: 100px;
 }
 /* ......... */
 .google-map-banner {
@@ -252,6 +260,11 @@ footer .info div {
     .social-icons {
         margin: 1em auto;
     }
+    /* -- blogs page -- */
+    .blogs {
+        margin: 0 auto;
+        max-width: 70%;
+    }
 }
 @media screen and (max-width: 590px) {
     .login-btn {
@@ -265,7 +278,6 @@ footer .info div {
     }
     .banner p {
         max-width: 100%;
-        
     }
     .count-wrapper {
         display: none;

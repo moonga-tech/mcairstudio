@@ -62,7 +62,7 @@
                             {{ Auth::user()->name }}
                         </a>
 
-                        @if(Auth::user()->name === 'Admin')
+                        @if(Auth::user()->name == "MasterAdmin")
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{route('admin.home')}}">Dashboard</a>
                             <a class="dropdown-item" href="{{route('course')}}">Music Course</a>
@@ -76,7 +76,7 @@
                                 @csrf
                             </form>
                         </div>
-                        @endif
+                        @else
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{route('home')}}">Home</a>
                             <a class="dropdown-item" href="">Profile</a>
@@ -91,6 +91,7 @@
                                 @csrf
                             </form>
                         </div>
+                        @endif
                     </li>
                 @endguest
             </ul>

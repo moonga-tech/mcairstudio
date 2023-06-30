@@ -1,0 +1,10 @@
+[26-Feb-2023 15:52:22 America/New_York] PHP Warning:  require(/home/mcaiiuzw/public_html/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcaiiuzw/public_html/artisan on line 18
+[26-Feb-2023 15:52:22 America/New_York] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mcaiiuzw/public_html/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/mcaiiuzw/public_html/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home/mcaiiuzw/public_html/artisan on line 18
+[26-Feb-2023 15:52:44 America/New_York] PHP Warning:  require(/home/mcaiiuzw/public_html/vendor/autoload.php): Failed to open stream: No such file or directory in /home/mcaiiuzw/public_html/artisan on line 18
+[26-Feb-2023 15:52:44 America/New_York] PHP Fatal error:  Uncaught Error: Failed opening required '/home/mcaiiuzw/public_html/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/mcaiiuzw/public_html/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home/mcaiiuzw/public_html/artisan on line 18
