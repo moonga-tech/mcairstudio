@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container">
-        <h1>{{$blogShow->blog_title}}</h1>
-        <p>{!! $blogShow->blog_body !!}</p>
+        <h1>{{$blog->blog_title}}</h1>
+        <p>{!! $blog->blog_body !!}</p>
     </div>
 @endsection

@@ -221,7 +221,9 @@ footer .info div {
 }
 /* blogs page */
 .blogs {
+    /* min-height: 20em; */
     max-width: 50%;
+    /* overflow-y: hidden; */
 }
 .blogs .card {
     margin: 1em 0;

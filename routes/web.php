@@ -39,7 +39,7 @@ Route::controller(AppController::class)->group(function() {
     Route::post('/contact-us', [AppController::class, 'contactPost']);
     Route::get('/projects', [AppController::class, 'projects'])->name('projects');
     Route::get('/blogs', [AppController::class, 'blogs'])->name('blogs');
-    Route::get('/blogs/{id}', [AppController::class, 'blogShow'])->name('blogShow');
+    Route::get('/blogs/{blog}', [AppController::class, 'blogShow'])->name('blogShow');
     Route::get('/privacy-policy', [AppController::class, 'privacyPolicy'])->name('privacyPolicy');
     Route::get('/terms-and-conditions', [AppController::class, 'termsAndConditions'])->name('termsAndConditions');
 

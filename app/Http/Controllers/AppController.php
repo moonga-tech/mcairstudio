@@ -43,15 +43,15 @@ class AppController extends Controller
     public function projects() {
         return view('pages.projects');
     }
-    public function blogs() {
+    public function blogs(Blog $blog) {
         $user = User::all();
-        $blogs = Blog::all();
-        return view('pages.blog-folder.blogs',['blogs' => $blogs]);
+        $blog = Blog::all();
+        return view('pages.blog-folder.blogs',['blog' => $blog]);
     }
-    public function blogShow($id) {
-        $blogShow = Blog::findOrFail($id);
-
-        return view('pages.blog-folder.blog-show',['blogShow' => $blogShow,]);
+    public function blogShow(Blog $blog) {
+        /* $blogShow = Blog::findOrFail($id); 
+ */
+        return view('pages.blog-folder.blog-show', compact('blog')/* ['blogShow' => $blogShow,] */);
     }
     public function privacyPolicy() {
         return view('pages.privacy-policy');
