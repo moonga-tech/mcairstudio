@@ -5,6 +5,7 @@
 
 @section('content')
 <div class="container">
-    Pricing
+Pricing
+    <script type='text/javascript' src='//pl20019512.highrevenuegate.com/e3/4e/2f/e34e2f6f1b235693d1e905f46b9132b2.js'></script>
 </div>
 @endsection

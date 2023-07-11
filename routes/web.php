@@ -19,15 +19,17 @@ use App\Http\Controllers\AdminController;
 |
 */
 
+/* site map - URLs */
 Route::get("/sitemap.xml", function () {
 return \Illuminate\Support\Facades\Redirect::to('sitemap.xml');
 });
 
+/* Index Paga */
 Route::get('/', function () {
     return view('welcome');
 });
 
-/* -- routing pages -- */
+/* -- Routing Pages -- */
 Route::controller(AppController::class)->group(function() {
     /* Route::get('/test', [AppController::class, 'test'])->name('test'); */
 

@@ -1,9 +1,47 @@
 @extends('layouts.app')
 @section('page-title', 'Blogs Content')
-@section('meta_keywords', '')
-@section('meta_description', 'https://mcairstudiotech.art/blogs,')
+@section('meta_keywords', 'reading, blog, blogging, articles, news, language, english, content, self-taught, studying, exploring')
+@section('meta_description', 'https://mcairstudiotech.art/blogs, check out the posted articles that you may be and read')
 
 @section('content')
+<div class="text-center ads">
+<!-- place here -->
+    <div>
+        <!-- <script type="text/javascript">
+            atOptions = {
+                'key' : '573e6437270bc7ba5e16abab8c30ce2f',
+                'format' : 'iframe',
+                'height' : 600,
+                'width' : 160,
+                'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/573e6437270bc7ba5e16abab8c30ce2f/invoke.js"></scr' + 'ipt>');
+        </script> -->
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '1290a146e70db72bedeb2cef608215a4',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 600,
+                'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1290a146e70db72bedeb2cef608215a4/invoke.js"></scr' + 'ipt>');
+        </script>
+    </div>
+    <div>
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '1290a146e70db72bedeb2cef608215a4',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 600,
+                'params' : {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1290a146e70db72bedeb2cef608215a4/invoke.js"></scr' + 'ipt>');
+        </script>
+    </div>
+
+</div>
 <div class="container">
     <div class="blogs">
         <div class="text-center">
@@ -41,5 +79,33 @@
             <h1>HELLo</h1>
         </div>
     </div> -->
+
+    <div class="ads">
+    <!-- place here -->
+        <div>
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '1290a146e70db72bedeb2cef608215a4',
+                    'format' : 'iframe',
+                    'height' : 250,
+                    'width' : 300,
+                    'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1290a146e70db72bedeb2cef608215a4/invoke.js"></scr' + 'ipt>');
+            </script>
+        </div>
+        <div>
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '1290a146e70db72bedeb2cef608215a4',
+                    'format' : 'iframe',
+                    'height' : 250,
+                    'width' : 300,
+                    'params' : {}
+                };
+                document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/1290a146e70db72bedeb2cef608215a4/invoke.js"></scr' + 'ipt>');
+            </script>
+        </div>
+    </div>
 </div>
 @endsection

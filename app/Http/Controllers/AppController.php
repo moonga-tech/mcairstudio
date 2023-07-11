@@ -51,6 +51,7 @@ class AppController extends Controller
     public function blogShow(Blog $blog) {
         /* $blogShow = Blog::findOrFail($id); 
  */
+        $blog = str_replace("-"," ",$blog->blog_title);
         return view('pages.blog-folder.blog-show', compact('blog')/* ['blogShow' => $blogShow,] */);
     }
     public function privacyPolicy() {
@@ -78,5 +79,11 @@ class AppController extends Controller
     }
     public function codeReactjs() {
         return view('pages.code.reactjs');
+    }
+    public function codehtmlcss() {
+        return view('pages.footer-pages.htmlcss');
+    }
+    public function codeCpp() {
+        return view('pages.footer-pages.htmlcss');
     }
 }
